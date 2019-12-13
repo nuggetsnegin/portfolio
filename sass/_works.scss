@@ -1,32 +1,28 @@
 .worksGrid{
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "felineFeeling felineFeelingBlurb"
-    "wishyWashyBlurb wishyWashy"
-    "furiendFinder furiendFinderBlurb"
-    "textileeBlurb textilee";
-}
+    "felineFeelingBlurb felineFeelingPreview"
+    "wishyWashyPreview wishyWashyBlurb"
+    "furiendFinderBlurb furiendFinderPreview"
+    "textileePreview textileeBlurb";
 
-.feelingFelinePreview{
-    grid-area: feelingFeline;
-    img{
-        width: 300px;
-        height: 300px;
-        box-shadow: 5px 5px $accent-color;
+    h3{
+        margin: 0;
     }
-
 }
 
-.feelingFelineBlurb{
-    grid-area: feelingFelineBlurb;
+.felineFeelingBlurb{
+    grid-area: felineFeelingBlurb;
 }
 
-.wishyWashyPreview{
-    grid-area: wishyWashy;
+.felineFeelingPreview{
+    grid-area: felineFeelingPreview;
     img{
-        box-shadow: 5px 5px $accent-color;
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -34,19 +30,22 @@
     grid-area: wishyWashyBlurb;
 }
 
-.furiendFinderPreview{
-    grid-area: furiendFinder;
+.wishyWashyPreview{
+    grid-area: wishyWashyPreview;
 }
 
 .furiendFinderBlurb{
     grid-area: furiendFinderBlurb;
 }
 
-.textileePreview{
-    grid-area: textilee;
+.furiendFinderPreview{
+    grid-area: furiendFinderPreview;
 }
 
 .textileeBlurb{
     grid-area: textileeBlurb;
 }
 
+.textileePreview{
+    grid-area: textileePreview;
+}

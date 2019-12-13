@@ -43,6 +43,15 @@ h2{
     letter-spacing: 5px;
 }
 
+h3{
+    background-color: $second-accent-color;
+    font-family: $display-font;
+    padding: 10px;
+    color: $darker-color;
+    font-size: 4rem;
+    text-transform: lowercase;
+}
+
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;

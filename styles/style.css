@@ -212,6 +212,15 @@ h2 {
   letter-spacing: 5px;
 }
 
+h3 {
+  background-color: #f0aeb0;
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  color: #378263;
+  font-size: 4rem;
+  text-transform: lowercase;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -280,67 +289,69 @@ footer span {
 .worksGrid {
   display: -ms-grid;
   display: grid;
+  gap: 20px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "felineFeeling felineFeelingBlurb" "wishyWashyBlurb wishyWashy" "furiendFinder furiendFinderBlurb" "textileeBlurb textilee";
+      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb";
 }
 
-.feelingFelinePreview {
-  grid-area: feelingFeline;
+.worksGrid h3 {
+  margin: 0;
 }
 
-.feelingFelinePreview img {
-  width: 300px;
-  height: 300px;
-  -webkit-box-shadow: 5px 5px #ee624e;
-          box-shadow: 5px 5px #ee624e;
+.felineFeelingBlurb {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: felineFeelingBlurb;
 }
 
-.feelingFelineBlurb {
-  grid-area: feelingFelineBlurb;
-}
-
-.wishyWashyPreview {
-  -ms-grid-row: 2;
+.felineFeelingPreview {
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: wishyWashy;
+  grid-area: felineFeelingPreview;
 }
 
-.wishyWashyPreview img {
-  -webkit-box-shadow: 5px 5px #ee624e;
-          box-shadow: 5px 5px #ee624e;
+.felineFeelingPreview img {
+  width: 400px;
+  height: 400px;
 }
 
 .wishyWashyBlurb {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: wishyWashyBlurb;
 }
 
-.furiendFinderPreview {
-  -ms-grid-row: 3;
+.wishyWashyPreview {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: furiendFinder;
+  grid-area: wishyWashyPreview;
 }
 
 .furiendFinderBlurb {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: furiendFinderBlurb;
 }
 
-.textileePreview {
-  -ms-grid-row: 4;
+.furiendFinderPreview {
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
-  grid-area: textilee;
+  grid-area: furiendFinderPreview;
 }
 
 .textileeBlurb {
   -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: textileeBlurb;
+}
+
+.textileePreview {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: textileePreview;
 }
 
 .contactGrid {
