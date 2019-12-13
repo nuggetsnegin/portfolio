@@ -181,4 +181,34 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 h1 {
   font-size: 10rem;
+  font-family: "Londrina Outline", cursive;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #54ae88;
+}
+
+h2 {
+  background-color: #ee624e;
+  font-family: "Playfair Display", serif;
+  padding: 40px;
+  color: #f3ce81;
+  font-size: 6rem;
+}
+
+body {
+  font-family: "Cutive Mono", monospace;
+}
+
+p {
+  font-size: 2rem;
+}
+
+html {
+  background-color: #e1e1d4;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }

@@ -5,6 +5,44 @@ $darker-color: #54ae88;
 $second-accent-color: #f0aeb0;
 $font-color: #59524c;
 
+$main-font: 'Cutive Mono', monospace;
+$heading-font: 'Londrina Outline', cursive;
+$display-font: 'Playfair Display', serif;
+
+
+
+
+
 h1{
     font-size: 10rem;
+    font-family: $heading-font;
+    text-align: center;
+    letter-spacing: 10px;
+    color: $darker-color;
 }
+
+h2{
+    background-color: $accent-color;
+    font-family: $display-font;
+    padding: 40px;
+    color: $light-color;
+    font-size: 6rem;
+}
+body{
+    font-family: $main-font;
+}
+
+p{
+    font-size: 2rem;
+}
+
+html{
+    background-color: $bg-color;
+    font-size: 62.5%;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
