@@ -28,7 +28,7 @@ h1{
     font-size: 10rem;
     font-family: $heading-font;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color: $darker-color;
     margin: 0;
 }
@@ -55,6 +55,12 @@ h3{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
 }
 
 .imageContainer{
