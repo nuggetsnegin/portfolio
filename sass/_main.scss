@@ -10,6 +10,20 @@ $heading-font: 'Londrina Outline', cursive;
 $display-font: 'Playfair Display', serif;
 
 
+html{
+    background-color: $bg-color;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $main-font;
+    background-image: url(/assets/bg.png);
+}
+
+p{
+    font-size: 2rem;
+}
+
 h1{
     font-size: 10rem;
     font-family: $heading-font;
@@ -22,24 +36,11 @@ h1{
 h2{
     background-color: $accent-color;
     font-family: $display-font;
-    padding: 30px;
+    padding: 20px;
     color: $light-color;
     font-size: 7rem;
     text-transform: lowercase;
     letter-spacing: 5px;
-}
-body{
-    font-family: $main-font;
-    background-image: url(/assets/bg.png);
-}
-
-p{
-    font-size: 2rem;
-}
-
-html{
-    background-color: $bg-color;
-    font-size: 62.5%;
 }
 
 .wrapper{
@@ -81,7 +82,6 @@ html{
 
 }
 
-
 footer{
     background-color: $darker-color;
     padding: 8px;
@@ -89,6 +89,7 @@ footer{
 
     p{
         margin: 0;
+        font-size: 1.5rem;
         text-align: center;
         text-transform: uppercase;
     }

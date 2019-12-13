@@ -1,6 +1,20 @@
+.contactGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "contactBlurb form"
+}
+
+
+.contactBlurb{
+    grid-area: contactBlurb;
+}
+
 form{
     display: flex;
     justify-content: center;
+    grid-area: form;
 }
 
 fieldset{

@@ -179,6 +179,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+html {
+  background-color: #e1e1d4;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cutive Mono", monospace;
+  background-image: url(/assets/bg.png);
+}
+
+p {
+  font-size: 2rem;
+}
+
 h1 {
   font-size: 10rem;
   font-family: "Londrina Outline", cursive;
@@ -191,25 +205,11 @@ h1 {
 h2 {
   background-color: #ee624e;
   font-family: "Playfair Display", serif;
-  padding: 30px;
+  padding: 20px;
   color: #fcd582;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
-}
-
-body {
-  font-family: "Cutive Mono", monospace;
-  background-image: url(/assets/bg.png);
-}
-
-p {
-  font-size: 2rem;
-}
-
-html {
-  background-color: #e1e1d4;
-  font-size: 62.5%;
 }
 
 .wrapper {
@@ -268,12 +268,29 @@ footer {
 
 footer p {
   margin: 0;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 footer span {
   color: #f0aeb0;
+}
+
+.contactGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "contactBlurb form";
+}
+
+.contactBlurb {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contactBlurb;
 }
 
 form {
@@ -283,6 +300,9 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: form;
 }
 
 fieldset {
