@@ -16,6 +16,7 @@ fieldset{
     "submit subtmi";
     input, textarea, .submit{
         padding: 10px;
+        color: $darker-color;
         background: $second-accent-color;
         border-radius: 5px;
         border: 2px solid $darker-color;

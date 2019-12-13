@@ -302,6 +302,7 @@ fieldset {
 
 fieldset input, fieldset textarea, fieldset .submit {
   padding: 10px;
+  color: #378263;
   background: #f0aeb0;
   border-radius: 5px;
   border: 2px solid #378263;
