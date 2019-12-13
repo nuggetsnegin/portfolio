@@ -21,10 +21,12 @@ fieldset{
         border: 2px solid $darker-color;
 
         &::placeholder{
-            opacity: 0.2;
+            color: $darker-color;
+            opacity: 0.3;
             font-size: 1.6rem;
         }
         &:focus{
+            border: 2px dashed $darker-color;
             &::placeholder{
                 opacity: 1;
             }
@@ -33,14 +35,8 @@ fieldset{
 }
 
 input:required{
-    box-shadow: none;
+    box-shadow: none; /*default styling is yuck*/
 }
-
-
-
-// label{
-//     transition: transform .2s ease, color .2s ease, font-size .2s ease, -webkit-transform .2s ease;
-// }
 
 .name{
     grid-area: name;
@@ -61,4 +57,13 @@ textarea{
     padding: 10px;
     text-transform: uppercase;
     color: $darker-color;
+
+    &:focus{
+        border: 2px dashed $darker-color;
+    }
+    &:hover{
+        color: $second-accent-color;
+        background-color: $darker-color;
+        border: 2px solid $second-accent-color;
+    }
 }

@@ -308,23 +308,31 @@ fieldset input, fieldset textarea, fieldset .submit {
 }
 
 fieldset input::-webkit-input-placeholder, fieldset textarea::-webkit-input-placeholder, fieldset .submit::-webkit-input-placeholder {
-  opacity: 0.2;
+  color: #378263;
+  opacity: 0.3;
   font-size: 1.6rem;
 }
 
 fieldset input:-ms-input-placeholder, fieldset textarea:-ms-input-placeholder, fieldset .submit:-ms-input-placeholder {
-  opacity: 0.2;
+  color: #378263;
+  opacity: 0.3;
   font-size: 1.6rem;
 }
 
 fieldset input::-ms-input-placeholder, fieldset textarea::-ms-input-placeholder, fieldset .submit::-ms-input-placeholder {
-  opacity: 0.2;
+  color: #378263;
+  opacity: 0.3;
   font-size: 1.6rem;
 }
 
 fieldset input::placeholder, fieldset textarea::placeholder, fieldset .submit::placeholder {
-  opacity: 0.2;
+  color: #378263;
+  opacity: 0.3;
   font-size: 1.6rem;
+}
+
+fieldset input:focus, fieldset textarea:focus, fieldset .submit:focus {
+  border: 2px dashed #378263;
 }
 
 fieldset input:focus::-webkit-input-placeholder, fieldset textarea:focus::-webkit-input-placeholder, fieldset .submit:focus::-webkit-input-placeholder {
@@ -346,6 +354,7 @@ fieldset input:focus::placeholder, fieldset textarea:focus::placeholder, fieldse
 input:required {
   -webkit-box-shadow: none;
           box-shadow: none;
+  /*default styling is yuck*/
 }
 
 .name {
@@ -376,4 +385,14 @@ textarea {
   padding: 10px;
   text-transform: uppercase;
   color: #378263;
+}
+
+.submit:focus {
+  border: 2px dashed #378263;
+}
+
+.submit:hover {
+  color: #f0aeb0;
+  background-color: #378263;
+  border: 2px solid #f0aeb0;
 }
