@@ -28,8 +28,10 @@
   </head>
   <body>
     <header class="wrapper">
-      <h1>Hi, I'm Negin!</h1>
-      <img src="assets/placeholder.gif" alt="idk" />
+      <!-- <h1>Hi, I'm Negin!</h1> -->
+      <div class="imageContainer">
+        <img src="assets/placeholder.gif" alt="idk" />
+      </div>
     </header>
     <div class="wrapper">
       <main>
@@ -84,13 +86,16 @@
 
           <form action="https://formspree.io/xjvkdnaq" method="POST">
             <fieldset>
-              <label for="name" class="visuallyHidden">Name</label>
+              <label for="name" class="visuallyHidden">Name
+                <!-- <span class="required">*</span> -->
+              </label>
               <input
                 type="text"
                 type="name"
                 name="name"
                 class="name"
-                placeholder="Name"
+                required="required"
+                placeholder="Negin's Number 1 Fan"
               />
 
               <label for="email" class="visuallyHidden">Email address</label>
@@ -99,6 +104,7 @@
                 type="email"
                 class="email"
                 name="email"
+                required="required"
                 placeholder="Email address"
               />
 
@@ -107,23 +113,24 @@
                 name="message"
                 type="textarea"
                 class="message"
-                placeholder="Message"
+                placeholder="Hi Negin, what's it like living with 3 cats?"
+                require="required"
                 rows="5"
                 cols="10"
               ></textarea>
 
-              <label for="submit-button" class="visuallyHidden">submit</label>
-              <button type="submit" class="read-more-button">submit</button>
+              <label for="submit" class="visuallyHidden">contact me</label>
+              <button type="submit" class="submit">contact me</button>
             </fieldset>
 
             <aside>
               <ul>
                 <li>
                   <a
-                    href="http://placekitten.com/200/300"
-                    aria-label="facebook social link"
+                    href="https://github.com/nuggetsnegin"
+                    aria-label="github link"
                     ><i
-                      class="fab fa-facebook-f"
+                      class="fab fa-github-square"
                       aria-hidden="true"
                       target="_blank"
                     ></i
@@ -168,9 +175,9 @@
         </section>
       </main>
 
-      <footer>
-        <p>Wassaaaap</p>
-      </footer>
-    </div>
+    </div><!--wrapper-->
+    <footer>
+      <p>Made with <span><i class="far fa-heart"></i></span> by Negin Sauermann &copy; 2019</p>
+    </footer>
   </body>
 </html>

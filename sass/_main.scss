@@ -1,7 +1,7 @@
 $bg-color: #e1e1d4;
 $accent-color: #ee624e;
-$light-color: #f3ce81;
-$darker-color: #54ae88;
+$light-color: #fcd582;
+$darker-color: #378263;
 $second-accent-color: #f0aeb0;
 $font-color: #59524c;
 
@@ -10,26 +10,27 @@ $heading-font: 'Londrina Outline', cursive;
 $display-font: 'Playfair Display', serif;
 
 
-
-
-
 h1{
     font-size: 10rem;
     font-family: $heading-font;
     text-align: center;
     letter-spacing: 10px;
     color: $darker-color;
+    margin: 0;
 }
 
 h2{
     background-color: $accent-color;
     font-family: $display-font;
-    padding: 40px;
+    padding: 30px;
     color: $light-color;
-    font-size: 6rem;
+    font-size: 7rem;
+    text-transform: lowercase;
+    letter-spacing: 5px;
 }
 body{
     font-family: $main-font;
+    background-image: url(/assets/bg.png);
 }
 
 p{
@@ -44,5 +45,27 @@ html{
 .wrapper{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.imageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    background-color: $darker-color;
+    padding: 8px;
+    color: $bg-color;
+
+    p{
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    span{
+        color: $second-accent-color;
+    }
 }
 

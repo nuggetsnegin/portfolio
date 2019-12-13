@@ -184,19 +184,23 @@ h1 {
   font-family: "Londrina Outline", cursive;
   text-align: center;
   letter-spacing: 10px;
-  color: #54ae88;
+  color: #378263;
+  margin: 0;
 }
 
 h2 {
   background-color: #ee624e;
   font-family: "Playfair Display", serif;
-  padding: 40px;
-  color: #f3ce81;
-  font-size: 6rem;
+  padding: 30px;
+  color: #fcd582;
+  font-size: 7rem;
+  text-transform: lowercase;
+  letter-spacing: 5px;
 }
 
 body {
   font-family: "Cutive Mono", monospace;
+  background-image: url(/assets/bg.png);
 }
 
 p {
@@ -211,4 +215,96 @@ html {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.imageContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  background-color: #378263;
+  padding: 8px;
+  color: #e1e1d4;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer span {
+  color: #f0aeb0;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+fieldset {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  font-size: 2rem;
+  gap: 5px;
+  -ms-grid-columns: (min-content)[2];
+      grid-template-columns: repeat(2, -webkit-min-content);
+      grid-template-columns: repeat(2, min-content);
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+      grid-template-areas: "name email" "message message" "submit subtmi";
+}
+
+fieldset input, fieldset textarea, fieldset .submit {
+  padding: 10px;
+  background: #f0aeb0;
+  border-radius: 5px;
+  border: 2px solid #378263;
+}
+
+input:required {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+.email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+textarea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  resize: none;
+}
+
+.submit {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: submit;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #378263;
 }

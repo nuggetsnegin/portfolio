@@ -1,0 +1,53 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    border: none;
+    display: grid;
+    font-size: 2rem;
+    gap: 5px;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:
+    "name email"
+    "message message"
+    "submit subtmi";
+    input, textarea, .submit{
+        padding: 10px;
+        background: $second-accent-color;
+        border-radius: 5px;
+        border: 2px solid $darker-color;
+    }
+}
+
+input:required{
+    box-shadow: none;
+}
+
+
+// label{
+//     transition: transform .2s ease, color .2s ease, font-size .2s ease, -webkit-transform .2s ease;
+// }
+
+.name{
+    grid-area: name;
+}
+
+.email{
+    grid-area: email;
+}
+
+textarea{
+    grid-area: message;
+    resize: none;
+}
+
+.submit{
+    grid-area: submit;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: $darker-color;
+}
