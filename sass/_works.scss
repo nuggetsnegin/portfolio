@@ -1,0 +1,52 @@
+.worksGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "felineFeeling felineFeelingBlurb"
+    "wishyWashyBlurb wishyWashy"
+    "furiendFinder furiendFinderBlurb"
+    "textileeBlurb textilee";
+}
+
+.feelingFelinePreview{
+    grid-area: feelingFeline;
+    img{
+        width: 300px;
+        height: 300px;
+        box-shadow: 5px 5px $accent-color;
+    }
+
+}
+
+.feelingFelineBlurb{
+    grid-area: feelingFelineBlurb;
+}
+
+.wishyWashyPreview{
+    grid-area: wishyWashy;
+    img{
+        box-shadow: 5px 5px $accent-color;
+    }
+}
+
+.wishyWashyBlurb{
+    grid-area: wishyWashyBlurb;
+}
+
+.furiendFinderPreview{
+    grid-area: furiendFinder;
+}
+
+.furiendFinderBlurb{
+    grid-area: furiendFinderBlurb;
+}
+
+.textileePreview{
+    grid-area: textilee;
+}
+
+.textileeBlurb{
+    grid-area: textileeBlurb;
+}
+

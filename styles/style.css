@@ -277,6 +277,72 @@ footer span {
   color: #f0aeb0;
 }
 
+.worksGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "felineFeeling felineFeelingBlurb" "wishyWashyBlurb wishyWashy" "furiendFinder furiendFinderBlurb" "textileeBlurb textilee";
+}
+
+.feelingFelinePreview {
+  grid-area: feelingFeline;
+}
+
+.feelingFelinePreview img {
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 5px 5px #ee624e;
+          box-shadow: 5px 5px #ee624e;
+}
+
+.feelingFelineBlurb {
+  grid-area: feelingFelineBlurb;
+}
+
+.wishyWashyPreview {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: wishyWashy;
+}
+
+.wishyWashyPreview img {
+  -webkit-box-shadow: 5px 5px #ee624e;
+          box-shadow: 5px 5px #ee624e;
+}
+
+.wishyWashyBlurb {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: wishyWashyBlurb;
+}
+
+.furiendFinderPreview {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: furiendFinder;
+}
+
+.furiendFinderBlurb {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: furiendFinderBlurb;
+}
+
+.textileePreview {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: textilee;
+}
+
+.textileeBlurb {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: textileeBlurb;
+}
+
 .contactGrid {
   display: -ms-grid;
   display: grid;
