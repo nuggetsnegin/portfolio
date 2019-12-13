@@ -53,6 +53,34 @@ html{
     justify-content: center;
 }
 
+.socialMedia{
+    font-size: 4rem;
+    color: $accent-color;
+    li{
+        list-style: none;
+    }
+
+    i{
+        color: $accent-color;
+
+        &:visited{
+            color: $second-accent-color;
+        }
+        &:active{
+            color: $accent-color;
+        }
+        &:hover{
+            color: $darker-color;
+            transform: scale(1.2);
+        }
+        &:focus{
+            color: $darker-color;
+            transform: scale(1.4);
+        }
+    }
+
+}
+
 
 footer{
     background-color: $darker-color;

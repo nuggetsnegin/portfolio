@@ -227,6 +227,39 @@ html {
           justify-content: center;
 }
 
+.socialMedia {
+  font-size: 4rem;
+  color: #ee624e;
+}
+
+.socialMedia li {
+  list-style: none;
+}
+
+.socialMedia i {
+  color: #ee624e;
+}
+
+.socialMedia i:visited {
+  color: #f0aeb0;
+}
+
+.socialMedia i:active {
+  color: #ee624e;
+}
+
+.socialMedia i:hover {
+  color: #378263;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.socialMedia i:focus {
+  color: #378263;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
 footer {
   background-color: #378263;
   padding: 8px;
@@ -272,6 +305,42 @@ fieldset input, fieldset textarea, fieldset .submit {
   background: #f0aeb0;
   border-radius: 5px;
   border: 2px solid #378263;
+}
+
+fieldset input::-webkit-input-placeholder, fieldset textarea::-webkit-input-placeholder, fieldset .submit::-webkit-input-placeholder {
+  opacity: 0.2;
+  font-size: 1.6rem;
+}
+
+fieldset input:-ms-input-placeholder, fieldset textarea:-ms-input-placeholder, fieldset .submit:-ms-input-placeholder {
+  opacity: 0.2;
+  font-size: 1.6rem;
+}
+
+fieldset input::-ms-input-placeholder, fieldset textarea::-ms-input-placeholder, fieldset .submit::-ms-input-placeholder {
+  opacity: 0.2;
+  font-size: 1.6rem;
+}
+
+fieldset input::placeholder, fieldset textarea::placeholder, fieldset .submit::placeholder {
+  opacity: 0.2;
+  font-size: 1.6rem;
+}
+
+fieldset input:focus::-webkit-input-placeholder, fieldset textarea:focus::-webkit-input-placeholder, fieldset .submit:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+fieldset input:focus:-ms-input-placeholder, fieldset textarea:focus:-ms-input-placeholder, fieldset .submit:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+fieldset input:focus::-ms-input-placeholder, fieldset textarea:focus::-ms-input-placeholder, fieldset .submit:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+fieldset input:focus::placeholder, fieldset textarea:focus::placeholder, fieldset .submit:focus::placeholder {
+  opacity: 1;
 }
 
 input:required {
