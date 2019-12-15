@@ -179,6 +179,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/*MAIN*/
 html {
   background-color: #e1e1d4;
   font-size: 62.5%;
@@ -200,6 +201,73 @@ h1 {
   letter-spacing: 5px;
   color: #378263;
   margin: 0;
+}
+
+h2 {
+  background-color: #c06471;
+  font-family: "Inconsolata", monospace;
+  padding: 20px;
+  color: #fcd582;
+  font-size: 7rem;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 2px;
+  background-color: #fcd582;
+  left: 50px;
+  bottom: 5px;
+}
+
+h3 {
+  background-color: #f0aeb0;
+  font-family: "Inconsolata", monospace;
+  padding: 10px;
+  color: #378263;
+  font-size: 4rem;
+  text-transform: lowercase;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imageContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  background-color: #f0aeb0;
+  color: #378263;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+}
+
+/*TOOLS*/
+.iconDescription {
+  display: none;
 }
 
 .toolsIcons {
@@ -260,73 +328,7 @@ h1 {
   color: #378263;
 }
 
-.iconDescription {
-  display: none;
-}
-
-.fab {
-  display: inline-block;
-}
-
-.works img {
-  max-height: 300px;
-  max-width: 590px;
-}
-
-h2 {
-  background-color: #c06471;
-  font-family: "Inconsolata", monospace;
-  padding: 20px;
-  color: #fcd582;
-  font-size: 7rem;
-  text-transform: lowercase;
-  letter-spacing: 5px;
-}
-
-h2::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 90%;
-  height: 2px;
-  background-color: #fcd582;
-  left: 50px;
-  bottom: 5px;
-}
-
-h3 {
-  background-color: #f0aeb0;
-  font-family: "Inconsolata", monospace;
-  padding: 10px;
-  color: #378263;
-  font-size: 4rem;
-  text-transform: lowercase;
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.imageContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+/*SOCIAL MEDIA*/
 .socialMedia {
   font-size: 4rem;
   color: #c06471;
@@ -334,6 +336,10 @@ header {
 
 .socialMedia li {
   list-style: none;
+}
+
+.socialMedia a {
+  background-color: transparent;
 }
 
 .socialMedia i {
@@ -377,6 +383,11 @@ footer span {
   color: #f0aeb0;
 }
 
+.works img {
+  max-height: 300px;
+  max-width: 590px;
+}
+
 .worksGrid {
   display: -ms-grid;
   display: grid;
@@ -392,6 +403,31 @@ footer span {
   margin: 0;
 }
 
+.worksGrid p {
+  padding: 0;
+}
+
+.felineFeelingBlurb,
+.felineFeelingPreview,
+.furiendFinderBlurb,
+.furiendFinderPreview,
+.wishyWashyBlurb,
+.wishyWashyPreview,
+.textileeBlurb,
+.textileePreview,
+.gameOfPotterBlurb,
+.gameOfPotterPreview {
+  margin-bottom: 35%;
+}
+
+.furiendFinderBlurb a,
+.gameOfPotterBlurb a,
+.textileeBlurb a {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: 2px solid #f0aeb0;
+}
+
 .felineFeelingBlurb {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -402,10 +438,6 @@ footer span {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: felineFeelingPreview;
-}
-
-.felineFeelingPreview img {
-  height: 400px;
 }
 
 .wishyWashyBlurb {
@@ -442,6 +474,18 @@ footer span {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: textileePreview;
+}
+
+.gameOfPotterBlurb {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: gameOfPotterBlurb;
+}
+
+.gameOfPotterPreview {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: gameOfPotterPreview;
 }
 
 .contactGrid {

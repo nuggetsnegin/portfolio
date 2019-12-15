@@ -1,6 +1,7 @@
-// img{
-//     border-radius: 25px;
-// }
+.works img{
+    max-height: 300px;
+    max-width: 590px;
+}
 
 .worksGrid{
     display: grid;
@@ -17,6 +18,33 @@
     h3{
         margin: 0;
     }
+
+    p{
+        padding: 0;
+    }
+}
+
+.felineFeelingBlurb,
+.felineFeelingPreview,
+.furiendFinderBlurb,
+.furiendFinderPreview,
+.wishyWashyBlurb,
+.wishyWashyPreview,
+.textileeBlurb,
+.textileePreview,
+.gameOfPotterBlurb,
+.gameOfPotterPreview{
+    margin-bottom: 35%;
+}
+
+.furiendFinderBlurb,
+.gameOfPotterBlurb,
+.textileeBlurb{
+    a{
+        padding: 0;
+        background-color: transparent;
+        border-bottom: 2px solid $second-accent-color;
+    }
 }
 
 .felineFeelingBlurb{
@@ -25,9 +53,6 @@
 
 .felineFeelingPreview{
     grid-area: felineFeelingPreview;
-    img{
-        height: 400px;
-    }
 }
 
 .wishyWashyBlurb{
@@ -52,4 +77,12 @@
 
 .textileePreview{
     grid-area: textileePreview;
+}
+
+.gameOfPotterBlurb{
+    grid-area: gameOfPotterBlurb;
+}
+
+.gameOfPotterPreview{
+    grid-area: gameOfPotterPreview;
 }
