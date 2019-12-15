@@ -247,6 +247,19 @@ h1 {
   color: #378263;
 }
 
+.tool-container:focus {
+  color: #378263;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 2px 2px #f0aeb0;
+}
+
+.tool-container:focus .iconDescription {
+  display: block;
+  font-size: 1.6rem;
+  color: #378263;
+}
+
 .iconDescription {
   display: none;
 }

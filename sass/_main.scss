@@ -64,6 +64,16 @@ h1{
             color: $darker-color;
         }
     }
+    &:focus{
+        color: $darker-color;
+        transform: scale(1.2);
+        text-shadow: 2px 2px $second-accent-color;
+        .iconDescription{
+            display: block;
+            font-size: 1.6rem;
+            color: $darker-color;
+        }
+    }
 }
 
 .iconDescription{
