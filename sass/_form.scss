@@ -17,10 +17,8 @@ form{
     grid-area: form;
 }
 
-fieldset{
-    border: none;
+.formGrid{
     display: grid;
-    font-size: 2rem;
     gap: 5px;
     grid-template-columns: repeat(2, min-content);
     grid-template-rows: repeat(3, min-content);
@@ -28,6 +26,11 @@ fieldset{
     "name email"
     "message message"
     "submit subtmi";
+}
+
+fieldset{
+    border: none;
+    font-size: 2rem;
     input, textarea, .submit{
         padding: 10px;
         color: $darker-color;

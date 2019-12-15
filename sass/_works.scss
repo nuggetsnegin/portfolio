@@ -1,27 +1,27 @@
-.works img{
-    max-height: 300px;
-    max-width: 590px;
+.works img {
+  max-height: 300px;
+  max-width: 590px;
 }
 
-.worksGrid{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
+.worksGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
     "felineFeelingBlurb felineFeelingPreview"
     "wishyWashyPreview wishyWashyBlurb"
     "furiendFinderBlurb furiendFinderPreview"
     "textileePreview textileeBlurb"
     "gameOfPotterBlurb gameOfPotterPreview";
 
-    h3{
-        margin: 0;
-    }
+  h3 {
+    margin: 0;
+  }
 
-    p{
-        padding: 0;
-    }
+  p {
+    padding: 0;
+  }
 }
 
 .felineFeelingBlurb,
@@ -33,56 +33,70 @@
 .textileeBlurb,
 .textileePreview,
 .gameOfPotterBlurb,
-.gameOfPotterPreview{
-    margin-bottom: 35%;
+.gameOfPotterPreview {
+  margin-bottom: 35%;
 }
 
 .furiendFinderBlurb,
 .gameOfPotterBlurb,
-.textileeBlurb{
-    a{
-        padding: 0;
-        background-color: transparent;
-        border-bottom: 2px solid $second-accent-color;
+.textileeBlurb {
+  a {
+    padding: 0;
+    background-color: transparent;
+
+    &:hover {
+      border-bottom: 2px solid $second-accent-color;
     }
+
+    &:focus {
+      border-bottom: 2px solid $second-accent-color;
+    }
+  }
 }
 
-.felineFeelingBlurb{
-    grid-area: felineFeelingBlurb;
+.felineFeelingBlurb {
+  grid-area: felineFeelingBlurb;
 }
 
-.felineFeelingPreview{
-    grid-area: felineFeelingPreview;
+.felineFeelingPreview {
+  grid-area: felineFeelingPreview;
 }
 
-.wishyWashyBlurb{
-    grid-area: wishyWashyBlurb;
+.wishyWashyBlurb {
+  grid-area: wishyWashyBlurb;
 }
 
-.wishyWashyPreview{
-    grid-area: wishyWashyPreview;
+.wishyWashyPreview {
+  grid-area: wishyWashyPreview;
 }
 
-.furiendFinderBlurb{
-    grid-area: furiendFinderBlurb;
+.furiendFinderBlurb {
+  grid-area: furiendFinderBlurb;
 }
 
-.furiendFinderPreview{
-    grid-area: furiendFinderPreview;
+.furiendFinderPreview {
+  grid-area: furiendFinderPreview;
 }
 
-.textileeBlurb{
-    grid-area: textileeBlurb;
+.textileeBlurb {
+  grid-area: textileeBlurb;
 }
 
-.textileePreview{
-    grid-area: textileePreview;
+.textileePreview {
+  grid-area: textileePreview;
 }
 
-.gameOfPotterBlurb{
-    grid-area: gameOfPotterBlurb;
+.gameOfPotterBlurb {
+  grid-area: gameOfPotterBlurb;
 }
 
-.gameOfPotterPreview{
-    grid-area: gameOfPotterPreview;
+.gameOfPotterPreview {
+  grid-area: gameOfPotterPreview;
+}
+
+.madeWith{
+    background-color: $accent-color;
+    color: $light-color;
+    font-weight: 700;
+    padding: 5px;
 }

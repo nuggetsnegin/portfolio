@@ -265,6 +265,22 @@ a {
   font-weight: 700;
 }
 
+a:hover, a:focus {
+  color: #f0aeb0;
+  background-color: #378263;
+}
+
+/*ABOUT*/
+.about p {
+  font-size: 2.5rem;
+  padding: 0px 20px;
+}
+
+.accent {
+  color: #c06471;
+  font-weight: 700;
+}
+
 /*TOOLS*/
 .iconDescription {
   display: none;
@@ -425,6 +441,17 @@ footer span {
 .textileeBlurb a {
   padding: 0;
   background-color: transparent;
+}
+
+.furiendFinderBlurb a:hover,
+.gameOfPotterBlurb a:hover,
+.textileeBlurb a:hover {
+  border-bottom: 2px solid #f0aeb0;
+}
+
+.furiendFinderBlurb a:focus,
+.gameOfPotterBlurb a:focus,
+.textileeBlurb a:focus {
   border-bottom: 2px solid #f0aeb0;
 }
 
@@ -488,6 +515,13 @@ footer span {
   grid-area: gameOfPotterPreview;
 }
 
+.madeWith {
+  background-color: #c06471;
+  color: #fcd582;
+  font-weight: 700;
+  padding: 5px;
+}
+
 .contactGrid {
   display: -ms-grid;
   display: grid;
@@ -516,11 +550,9 @@ form {
   grid-area: form;
 }
 
-fieldset {
-  border: none;
+.formGrid {
   display: -ms-grid;
   display: grid;
-  font-size: 2rem;
   gap: 5px;
   -ms-grid-columns: (min-content)[2];
       grid-template-columns: repeat(2, -webkit-min-content);
@@ -529,6 +561,11 @@ fieldset {
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
       grid-template-areas: "name email" "message message" "submit subtmi";
+}
+
+fieldset {
+  border: none;
+  font-size: 2rem;
 }
 
 fieldset input, fieldset textarea, fieldset .submit {
