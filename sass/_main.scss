@@ -1,5 +1,5 @@
 $bg-color: #e1e1d4;
-$accent-color: #ee624e;
+$accent-color: #c06471;
 $light-color: #fcd582;
 $darker-color: #378263;
 $second-accent-color: #f0aeb0;
@@ -36,17 +36,32 @@ h1{
     // box-shadow: inset 0 20px 0 #FDF6EF;
 }
 
+.toolsIcons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    font-size: 5rem;
+    color: $accent-color;
+    gap: 50px;
+    text-shadow: 2px 2px $light-color;
+    transition: 0.5s all ease;
+}
+
 .tool-container{
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
+    justify-content: space-evenly;
 
     &:hover{
+        color: $darker-color;
+        transform: scale(1.2);
+        text-shadow: 2px 2px $second-accent-color;
         .iconDescription{
             display: block;
+            font-size: 1.6rem;
+            color: $darker-color;
         }
     }
 }
