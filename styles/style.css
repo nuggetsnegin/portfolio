@@ -195,12 +195,24 @@ p {
 }
 
 h1 {
-  font-size: 10rem;
   font-family: "Londrina Outline", cursive;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 25px;
+  font-size: 10rem;
   text-align: center;
   letter-spacing: 5px;
-  color: #378263;
+  z-index: 2;
+  position: absolute;
+  top: 200px;
   margin: 0;
+}
+
+.imageContainer {
+  max-height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -413,7 +425,7 @@ footer span {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb" "gameOfPotterBlurb gameOfPotterPreview";
+      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb" "gameOfPotterBlurb gameOfPotterPreview";
 }
 
 .worksGrid h3 {
@@ -523,6 +535,22 @@ footer span {
   padding: 5px;
 }
 
+.color1 {
+  color: #c06471;
+}
+
+.color2 {
+  color: #378263;
+}
+
+.color3 {
+  color: #f0aeb0;
+}
+
+.color4 {
+  color: #fcd582;
+}
+
 .contact h2 {
   margin-bottom: 40px;
 }
@@ -575,7 +603,7 @@ form {
   -ms-grid-rows: (min-content)[3];
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "name email" "message message" "submit subtmi";
+      grid-template-areas: "name email" "message message" "submit subtmi";
 }
 
 fieldset {
