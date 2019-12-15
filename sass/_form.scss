@@ -1,11 +1,28 @@
+.contact{
+    h2{
+        margin-bottom: 40px;
+    }
+
+    a{
+        background-color: transparent;
+        padding: 0;
+
+        &:hover,
+        &:focus{
+            border-bottom: 2px solid $darker-color;
+        }
+    }
+
+}
+
 .contactGrid{
     display: grid;
+    gap: 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
     "contactBlurb form"
 }
-
 
 .contactBlurb{
     grid-area: contactBlurb;
@@ -31,6 +48,7 @@ form{
 fieldset{
     border: none;
     font-size: 2rem;
+    font-weight: 700;
     input, textarea, .submit{
         padding: 10px;
         color: $darker-color;

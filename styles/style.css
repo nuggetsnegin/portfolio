@@ -382,6 +382,7 @@ a:hover, a:focus {
           transform: scale(1.4);
 }
 
+/*FOOTIE FOOTER*/
 footer {
   background-color: #378263;
   padding: 8px;
@@ -522,9 +523,23 @@ footer span {
   padding: 5px;
 }
 
+.contact h2 {
+  margin-bottom: 40px;
+}
+
+.contact a {
+  background-color: transparent;
+  padding: 0;
+}
+
+.contact a:hover, .contact a:focus {
+  border-bottom: 2px solid #378263;
+}
+
 .contactGrid {
   display: -ms-grid;
   display: grid;
+  gap: 5px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
@@ -566,6 +581,7 @@ form {
 fieldset {
   border: none;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 fieldset input, fieldset textarea, fieldset .submit {
