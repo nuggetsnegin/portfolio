@@ -316,9 +316,9 @@ footer span {
   gap: 20px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb";
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb" "gameOfPotterBlurb gameOfPotterPreview";
 }
 
 .worksGrid h3 {
