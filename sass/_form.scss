@@ -26,6 +26,10 @@
 
 .contactBlurb{
     grid-area: contactBlurb;
+
+    p{
+        margin: 0;
+    }
 }
 
 form{

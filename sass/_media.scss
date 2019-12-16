@@ -1,27 +1,22 @@
 @media (max-width: 1250px){
 
-
-
-
-    h1{
-        font-size: 6.5rem;
-        left: 55%;
+    body{
+        overflow-x: hidden;
     }
 
-    .accentText{
-
-        top: 76%;
-        left: 58%;
-        p{
-            font-size: 3.5rem;
-        }
+    .about p{
+        font-size: 2rem;
     }
 
     .works{
         img{
-            width: 80%;
-            height: 80%;
+            width: 90%;
+            height: 90%;
         }
+    }
+
+    .works span{
+        line-height: 1.8;
     }
 
 }
