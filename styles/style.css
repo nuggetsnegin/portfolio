@@ -457,8 +457,6 @@ footer span {
 .worksGrid a:hover {
   background-color: #323b63;
   color: #ffa9e0;
-  -webkit-box-shadow: 2px 2px #ffa9e0;
-          box-shadow: 2px 2px #ffa9e0;
 }
 
 .felineFeelingBlurb,
