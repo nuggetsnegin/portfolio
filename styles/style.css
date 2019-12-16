@@ -926,3 +926,28 @@ textarea {
     font-size: 2.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .worksGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "felineFeelingBlurb" "felineFeelingPreview" "wishyWashyBlurb" "wishyWashyPreview" "furiendFinderBlurb" "furiendFinderPreview" "textileeBlurb" "textileePreview" "gameOfPotterBlurb" "gameOfPotterPreview";
+  }
+  .felineFeelingBlurb,
+  .wishyWashyBlurb,
+  .furiendFinderBlurb,
+  .textileeBlurb,
+  .gameOfPotterBlurb {
+    margin-bottom: 5px;
+  }
+  .felineFeelingPreview img,
+  .wishyWashyPreview img,
+  .furiendFinderPreview img,
+  .textileePreview img,
+  .gameOfPotterPreview img {
+    width: 100%;
+    height: 100%;
+  }
+}
