@@ -6,8 +6,9 @@ $darker-color: #378263;
 $second-accent-color: #f0aeb0;
 $font-color: #59524c;
 
+
 $main-font: 'Cutive Mono', monospace;
-$heading-font: 'Londrina Outline', cursive;
+$heading-font: 'Londrina Shadow', cursive;
 $new-font: 'Inconsolata', monospace;
 
 
@@ -28,15 +29,13 @@ p{
 
 h1{
     font-family: $heading-font;
-    color: white; /*to fix*/
-    padding: 20px;
-    border-radius: 25px;
-    font-size: 15rem;
+    color: #e1e1d4;
+    font-size: 10rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     z-index: 2;
     position: absolute;
-    top: 430px;
+    top: 140px;
     margin: 0;
 }
 
@@ -46,6 +45,7 @@ h1{
     margin-bottom: 20px;
     img{
         max-width: 1200px;
+        box-shadow: 5px 5px $accent-color;
     }
 }
 

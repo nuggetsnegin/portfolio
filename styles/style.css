@@ -195,17 +195,14 @@ p {
 }
 
 h1 {
-  font-family: "Londrina Outline", cursive;
-  color: white;
-  /*to fix*/
-  padding: 20px;
-  border-radius: 25px;
-  font-size: 15rem;
+  font-family: "Londrina Shadow", cursive;
+  color: #e1e1d4;
+  font-size: 10rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   z-index: 2;
   position: absolute;
-  top: 430px;
+  top: 140px;
   margin: 0;
 }
 
@@ -218,6 +215,8 @@ h1 {
 
 .imageContainer img {
   max-width: 1200px;
+  -webkit-box-shadow: 5px 5px #c06471;
+          box-shadow: 5px 5px #c06471;
 }
 
 h2 {
