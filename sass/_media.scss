@@ -1,55 +1,86 @@
-@media (max-width: 1250px){
+@media (max-width: 1250px) {
+  body {
+    overflow-x: hidden; /*fix aos causing scroll with not enough space for animation*/
+  }
 
-    body{
-        overflow-x: hidden; /*fix aos causing scroll with not enough space for animation*/
+  .about p {
+    font-size: 2rem;
+  }
+
+  .works {
+    img {
+      width: 90%;
+      height: 90%;
     }
 
-    .about p{
-        font-size: 2rem;
+    span {
+      line-height: 1.8;
     }
-
-    .works{
-        img{
-            width: 90%;
-            height: 90%;
-        }
-
-        span{
-            line-height: 1.8;
-        }
-    }
-
+  }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
+  .about .aboutImage img {
+    width: 300px;
+    height: 300px;
+  }
 
-    .about .aboutImage img{
-        width: 300px;
-        height: 300px;
-    }
+  .contactBlurb {
+    padding: 20px 35px;
+  }
 
-    .contactBlurb{
-        padding: 20px 35px;
-    }
-
-    .contactGrid {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "contactBlurb"
-        "form";
-      }
+  .contactGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contactBlurb"
+      "form";
+  }
 }
 
-@media (max-width: 800px){
-    .about{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-        "title title title"
-        "paragraphOne paragraphOne image"
-        "paragraphTwo paragraphTwo image"
-        "paragraphThree paragraphThree paragraphThree";
+@media (max-width: 800px) {
+  .about {
+    grid-template-areas:
+      "title title title"
+      "paragraphOne paragraphOne image"
+      "paragraphTwo paragraphTwo image"
+      "paragraphThree paragraphThree paragraphThree";
+  }
+}
+
+@media (max-width: 700px) {
+  .imageContainer {
+    h1 {
+      font-size: 5.5rem;
+    }
+    p {
+      font-size: 3rem;
+    }
+  }
+  .about {
+    grid-template-areas:
+      "title title title"
+      "paragraphOne paragraphOne image"
+      "paragraphTwo paragraphTwo paragraphTwo"
+      "paragraphThree paragraphThree paragraphThree";
+  }
+
+  .worksGrid {
+    gap: 5px;
+    p {
+      font-size: 1.6rem;
     }
 
+    span {
+      line-height: 2;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
 }
