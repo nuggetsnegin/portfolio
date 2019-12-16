@@ -4,12 +4,9 @@ $accent-color: #c06471;
 $light-color: #fcd582;
 $darker-color: #378263;
 $second-accent-color: #f0aeb0;
-$font-color: #59524c;
 
-
-$main-font: 'Cutive Mono', monospace;
 $heading-font: 'Londrina Shadow', cursive;
-$new-font: 'Inconsolata', monospace;
+$main-font: 'Inconsolata', monospace;
 
 
 html{
@@ -18,7 +15,7 @@ html{
 }
 
 body{
-    font-family: $new-font;
+    font-family: $main-font;
     // background-image: url(assets/bg.png);
 }
 
@@ -37,6 +34,7 @@ h1{
     position: absolute;
     top: 140px;
     margin: 0;
+    text-shadow: 5px 2px 2px black;
 }
 
 .imageContainer{
@@ -51,7 +49,6 @@ h1{
 
 h2{
     background-color: $accent-color;
-    font-family: $new-font;
     padding: 20px;
     color: $light-color;
     font-size: 7rem;
@@ -72,7 +69,6 @@ h2{
 
 h3{
     background-color: $second-accent-color;
-    font-family: $new-font;
     padding: 10px;
     color: $darker-color;
     font-size: 4rem;
