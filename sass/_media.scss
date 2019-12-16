@@ -1,7 +1,7 @@
 @media (max-width: 1250px){
 
     body{
-        overflow-x: hidden;
+        overflow-x: hidden; /*fix aos causing scroll with not enough space for animation*/
     }
 
     .about p{
@@ -13,10 +13,26 @@
             width: 90%;
             height: 90%;
         }
+
+        span{
+            line-height: 1.8;
+        }
     }
 
-    .works span{
-        line-height: 1.8;
+}
+
+@media (max-width: 1200px){
+
+    .aboutImage{
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
+
+    ul{
+        display: block;
+    }
+
 
 }

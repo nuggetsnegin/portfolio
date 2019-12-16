@@ -19,6 +19,12 @@ body{
     color: $almost-black;
 }
 
+.wrapper{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
 p{
     font-size: 2rem;
     padding: 0px 10px;
@@ -36,34 +42,6 @@ h1{
     bottom: 0px;
     right: 5px;
     margin: 0;
-}
-
-.accentText{
-    position: absolute;
-    z-index: 2;
-    bottom: -38px;
-    right: -5px;
-    p{
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 5px;
-        margin: 0;
-        text-shadow: none;
-        font-family: $main-font;
-        color: $accent-color;
-        font-size: 4rem;
-    }
-}
-
-.imageContainer{
-    position: relative;
-    max-height: 90vh;
-    object-fit: contain;
-    margin-bottom: 20px;
-    img{
-        max-width: 1200px;
-        width: 100%;
-    }
 }
 
 h2{
@@ -94,23 +72,6 @@ h3{
     text-transform: lowercase;
 }
 
-.wrapper{
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-}
-
-.imageContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 a{
     background-color: $light-color;
     color: $darker-color;
@@ -127,6 +88,35 @@ a{
 .accent{
     color: $accent-color;
     font-weight: 700;
+}
+
+/*HEADER*/
+.accentText{
+    position: absolute;
+    z-index: 2;
+    bottom: -38px;
+    right: -5px;
+    p{
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 5px;
+        margin: 0;
+        text-shadow: none;
+        font-family: $main-font;
+        color: $accent-color;
+        font-size: 4rem;
+    }
+}
+
+.imageContainer{
+    position: relative;
+    max-height: 90vh;
+    object-fit: contain;
+    margin-bottom: 20px;
+    img{
+        max-width: 1200px;
+        width: 100%;
+    }
 }
 
 /*ABOUT*/
@@ -199,39 +189,6 @@ a{
             color: $darker-color;
         }
     }
-}
-
-/*SOCIAL MEDIA*/
-.socialMedia{
-    font-size: 4rem;
-    color: $accent-color;
-    li{
-        list-style: none;
-        margin-bottom: 5px;
-    }
-
-    a{
-        background-color: transparent;
-    }
-
-    i{
-        color: $accent-color;
-
-        &:visited{
-            color: $light-color;
-            border: none;
-        }
-        &:active{
-            color: $accent-color;
-        }
-        &:hover,
-        &:focus{
-            color: $darker-color;
-            text-decoration: none;
-            transform: scale(1.2);
-        }
-    }
-
 }
 
 /*FOOTIE FOOTER*/

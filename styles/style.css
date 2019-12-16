@@ -190,6 +190,12 @@ body {
   color: #151515;
 }
 
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 p {
   font-size: 2rem;
   padding: 0px 10px;
@@ -207,37 +213,6 @@ h1 {
   bottom: 0px;
   right: 5px;
   margin: 0;
-}
-
-.accentText {
-  position: absolute;
-  z-index: 2;
-  bottom: -38px;
-  right: -5px;
-}
-
-.accentText p {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 5px;
-  margin: 0;
-  text-shadow: none;
-  font-family: "Inconsolata", monospace;
-  color: #0055A5;
-  font-size: 4rem;
-}
-
-.imageContainer {
-  position: relative;
-  max-height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-bottom: 20px;
-}
-
-.imageContainer img {
-  max-width: 1200px;
-  width: 100%;
 }
 
 h2 {
@@ -268,31 +243,6 @@ h3 {
   text-transform: lowercase;
 }
 
-.wrapper {
-  max-width: 1200px;
-  width: 95%;
-  margin: 0 auto;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.imageContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 a {
   background-color: #ffa9e0;
   color: #323b63;
@@ -308,6 +258,38 @@ a:hover, a:focus {
 .accent {
   color: #0055A5;
   font-weight: 700;
+}
+
+/*HEADER*/
+.accentText {
+  position: absolute;
+  z-index: 2;
+  bottom: -38px;
+  right: -5px;
+}
+
+.accentText p {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: none;
+  font-family: "Inconsolata", monospace;
+  color: #0055A5;
+  font-size: 4rem;
+}
+
+.imageContainer {
+  position: relative;
+  max-height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.imageContainer img {
+  max-width: 1200px;
+  width: 100%;
 }
 
 /*ABOUT*/
@@ -831,9 +813,45 @@ textarea {
   border: 2px solid #ffa9e0;
 }
 
+/*SOCIAL MEDIA*/
+.socialMedia {
+  font-size: 4rem;
+  color: #0055A5;
+}
+
+.socialMedia li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.socialMedia a {
+  background-color: transparent;
+}
+
+.socialMedia i {
+  color: #0055A5;
+}
+
+.socialMedia i:visited {
+  color: #ffa9e0;
+  border: none;
+}
+
+.socialMedia i:active {
+  color: #0055A5;
+}
+
+.socialMedia i:hover, .socialMedia i:focus {
+  color: #323b63;
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media (max-width: 1250px) {
   body {
     overflow-x: hidden;
+    /*fix aos causing scroll with not enough space for animation*/
   }
   .about p {
     font-size: 2rem;
@@ -844,5 +862,15 @@ textarea {
   }
   .works span {
     line-height: 1.8;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutImage img {
+    width: 100px;
+    height: 100px;
+  }
+  ul {
+    display: block;
   }
 }
