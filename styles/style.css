@@ -895,10 +895,12 @@ textarea {
 
 @media (max-width: 800px) {
   .about {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "title title" "paragraph image" "paragraph paragraph";
+        grid-template-areas: "title title title" "paragraphOne paragraphOne image" "paragraphTwo paragraphTwo image" "paragraphThree paragraphThree paragraphThree";
   }
 }

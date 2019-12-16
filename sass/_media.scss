@@ -42,12 +42,14 @@
 
 @media (max-width: 800px){
     .about{
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        "title title"
-        "paragraph image"
-        "paragraph paragraph";
+        "title title title"
+        "paragraphOne paragraphOne image"
+        "paragraphTwo paragraphTwo image"
+        "paragraphThree paragraphThree paragraphThree";
     }
 
 }
