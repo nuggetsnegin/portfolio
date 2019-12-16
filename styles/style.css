@@ -204,16 +204,16 @@ h1 {
   letter-spacing: 5px;
   z-index: 2;
   position: absolute;
-  top: 66%;
-  left: 55%;
+  bottom: 0px;
+  right: 5px;
   margin: 0;
 }
 
 .accentText {
   position: absolute;
   z-index: 2;
-  top: 76%;
-  left: 55%;
+  bottom: -38px;
+  right: -5px;
 }
 
 .accentText p {
@@ -228,6 +228,7 @@ h1 {
 }
 
 .imageContainer {
+  position: relative;
   max-height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
@@ -236,6 +237,7 @@ h1 {
 
 .imageContainer img {
   max-width: 1200px;
+  width: 100%;
 }
 
 h2 {
@@ -268,6 +270,7 @@ h3 {
 
 .wrapper {
   max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -822,4 +825,22 @@ textarea {
   color: #ffa9e0;
   background-color: #323b63;
   border: 2px solid #ffa9e0;
+}
+
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 6.5rem;
+    left: 55%;
+  }
+  .accentText {
+    top: 76%;
+    left: 58%;
+  }
+  .accentText p {
+    font-size: 3.5rem;
+  }
+  .works img {
+    width: 80%;
+    height: 80%;
+  }
 }
