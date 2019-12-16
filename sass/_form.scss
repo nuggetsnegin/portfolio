@@ -9,7 +9,7 @@
         padding: 0;
         &:hover{
             color: $accent-color;
-            border-bottom: 2px solid $second-accent-color;
+            border-bottom: 2px solid $light-color;
         }
     }
 
@@ -52,7 +52,7 @@ fieldset{
     input, textarea, .submit{
         padding: 10px;
         color: $darker-color;
-        background: $second-accent-color;
+        background: $light-color;
         border-radius: 5px;
         border: 2px solid $darker-color;
         &::placeholder{
@@ -99,8 +99,8 @@ textarea{
         border: 2px dashed $darker-color;
     }
     &:hover{
-        color: $second-accent-color;
+        color: $light-color;
         background-color: $darker-color;
-        border: 2px solid $second-accent-color;
+        border: 2px solid $light-color;
     }
 }

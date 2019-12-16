@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -199,17 +198,34 @@ p {
 }
 
 h1 {
-  font-family: "Nanum Pen Script", cursive;
   color: #e1e1d4;
-  font-size: 10rem;
-  text-shadow: 5px 5px #323b63;
-  text-align: center;
-  text-transform: lowercase;
+  padding: 0;
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   z-index: 2;
   position: absolute;
-  top: 200px;
-  left: 800px;
+  top: 480px;
+  left: 795px;
   margin: 0;
+}
+
+.accentText {
+  position: absolute;
+  z-index: 2;
+  top: 550px;
+  left: 790px;
+}
+
+.accentText p {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin: 0;
+  text-shadow: none;
+  font-family: "Inconsolata", monospace;
+  color: #0055A5;
+  font-size: 4rem;
 }
 
 .imageContainer {
@@ -244,7 +260,7 @@ h2::after {
 }
 
 h3 {
-  background-color: #fcc1df;
+  background-color: #ffa9e0;
   padding: 10px;
   color: #323b63;
   font-size: 4rem;
@@ -276,7 +292,7 @@ header {
 }
 
 a {
-  background-color: #fcc1df;
+  background-color: #ffa9e0;
   color: #323b63;
   text-decoration: none;
   padding: 10px;
@@ -284,7 +300,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #fcc1df;
+  color: #ffa9e0;
   background-color: #323b63;
 }
 
@@ -335,6 +351,8 @@ a:hover, a:focus {
   height: 360px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
   border-radius: 50%;
   -webkit-box-shadow: 10px 10px #ffa9e0;
           box-shadow: 10px 10px #ffa9e0;
@@ -382,7 +400,7 @@ a:hover, a:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 700;
-  text-shadow: 5px 5px #fcc1df;
+  text-shadow: 5px 5px #ffa9e0;
 }
 
 .tool-container:hover .iconDescription, .tool-container:focus .iconDescription {
@@ -411,7 +429,7 @@ a:hover, a:focus {
 }
 
 .socialMedia i:visited {
-  color: #fcc1df;
+  color: #ffa9e0;
   border: none;
 }
 
@@ -441,7 +459,7 @@ footer p {
 }
 
 footer span {
-  color: #fcc1df;
+  color: #ffa9e0;
 }
 
 .works img {
@@ -494,7 +512,7 @@ footer span {
 .textileeBlurb a:hover,
 .textileeBlurb a:focus {
   color: #0055A5;
-  border-bottom: 2px solid #fcc1df;
+  border-bottom: 2px solid #ffa9e0;
 }
 
 .felineFeelingBlurb {
@@ -902,7 +920,7 @@ footer span {
 
 .contact a:hover {
   color: #0055A5;
-  border-bottom: 2px solid #fcc1df;
+  border-bottom: 2px solid #ffa9e0;
 }
 
 .contactGrid {
@@ -956,7 +974,7 @@ fieldset {
 fieldset input, fieldset textarea, fieldset .submit {
   padding: 10px;
   color: #323b63;
-  background: #fcc1df;
+  background: #ffa9e0;
   border-radius: 5px;
   border: 2px solid #323b63;
 }
@@ -1048,7 +1066,7 @@ textarea {
 }
 
 .submit:hover {
-  color: #fcc1df;
+  color: #ffa9e0;
   background-color: #323b63;
-  border: 2px solid #fcc1df;
+  border: 2px solid #ffa9e0;
 }

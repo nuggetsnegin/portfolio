@@ -4,18 +4,14 @@ $accent-color: #0055A5;
 $almost-black: #151515;
 $light-color: rgb(255, 169, 224);
 $darker-color: #323b63;
-$second-accent-color: #fcc1df;
 
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
-
-//  'Londrina Shadow', cursive;
-$heading-font: 'Nanum Pen Script', cursive;
+$heading-font: 'Londrina Outline', cursive;
 $main-font: 'Inconsolata', monospace;
 
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 
 html{
+    // background-image: url(/assets/bg.png);
     background-color: $bg-color;
     font-size: 62.5%;
 }
@@ -23,7 +19,6 @@ html{
 body{
     font-family: $main-font;
     color: $almost-black;
-    // background-image: url(assets/bg.png);
 }
 
 p{
@@ -33,17 +28,33 @@ p{
 }
 
 h1{
-    font-family: $heading-font;
     color: $bg-color;
-    font-size: 10rem;
-    text-shadow: 5px 5px $darker-color;
-    text-align: center;
-    text-transform: lowercase;
+    padding: 0;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     z-index: 2;
     position: absolute;
-    top: 200px;
-    left: 800px;
+    top: 480px;
+    left: 795px;
     margin: 0;
+}
+
+.accentText{
+    position: absolute;
+    z-index: 2;
+    top: 550px;
+    left: 790px;
+    p{
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 5px;
+        margin: 0;
+        text-shadow: none;
+        font-family: $main-font;
+        color: $accent-color;
+        font-size: 4rem;
+    }
 }
 
 .imageContainer{
@@ -76,7 +87,7 @@ h2{
 }
 
 h3{
-    background-color: $second-accent-color;
+    background-color: $light-color;
     padding: 10px;
     color: $darker-color;
     font-size: 4rem;
@@ -100,7 +111,7 @@ header{
 }
 
 a{
-    background-color: $second-accent-color;
+    background-color: $light-color;
     color: $darker-color;
     text-decoration: none;
     padding: 10px;
@@ -108,7 +119,7 @@ a{
 
     &:hover,
     &:focus{
-        color: $second-accent-color;
+        color: $light-color;
         background-color: $darker-color;
     }
 }
@@ -146,6 +157,7 @@ a{
             width: 360px;
             height: 360px;
             object-fit: cover;
+            object-position: top center;
             border-radius: 50%;
             box-shadow: 10px 10px $light-color;
         }
@@ -180,7 +192,7 @@ a{
         color: $darker-color;
         transform: scale(1.2);
         font-weight: 700;
-        text-shadow: 5px 5px $second-accent-color;
+        text-shadow: 5px 5px $light-color;
         .iconDescription{
             display: block;
             font-size: 1.6rem;
@@ -206,7 +218,7 @@ a{
         color: $accent-color;
 
         &:visited{
-            color: $second-accent-color;
+            color: $light-color;
             border: none;
         }
         &:active{
@@ -235,7 +247,7 @@ footer{
         text-transform: uppercase;
     }
     span{
-        color: $second-accent-color;
+        color: $light-color;
     }
 }
 
