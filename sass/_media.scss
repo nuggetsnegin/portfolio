@@ -23,11 +23,9 @@
 
 @media (max-width: 900px){
 
-    .aboutImage{
-        img{
-            width: 100px;
-            height: 100px;
-        }
+    .about .aboutImage img{
+        width: 300px;
+        height: 300px;
     }
 
     .contactBlurb{
@@ -40,7 +38,16 @@
         "contactBlurb"
         "form";
       }
-      
+}
 
+@media (max-width: 800px){
+    .about{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "title title"
+        "paragraph image"
+        "paragraph paragraph";
+    }
 
 }

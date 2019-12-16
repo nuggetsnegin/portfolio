@@ -124,7 +124,9 @@ a{
     grid-template-rows: auto;
     grid-template-areas:
     "title title title"
-    "paragraph paragraph image";
+    "paragraphOne paragraphOne image"
+    "paragraphTwo paragraphTwo image"
+    "paragraphThree paragraphThree image";
     p{
         font-size: 2.5rem;
         padding: 0px 20px;
@@ -134,15 +136,25 @@ a{
         grid-area: title;
     }
 
-    .aboutParagraph{
-        grid-area: paragraph;
-        a{
-            &:hover{
-                color: $light-color;
-                background-color: $darker-color;
-            }
+    a{
+        &:hover{
+            color: $light-color;
+            background-color: $darker-color;
         }
     }
+
+    .aboutParagraphOne{
+        grid-area: paragraphOne;
+    }
+
+    .aboutParagraphTwo{
+        grid-area: paragraphTwo;
+    }
+
+    .aboutParagraphThree{
+        grid-area: paragraphThree;
+    }
+
 
     .aboutImage{
         padding-top: 30px;
