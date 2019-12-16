@@ -31,22 +31,25 @@ h1{
     font-family: $heading-font;
     // -webkit-text-stroke-width: 2px;
     // -webkit-text-stroke-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.9);
+    // background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 25px;
-    font-size: 10rem;
+    font-size: 15rem;
     text-align: center;
     letter-spacing: 5px;
     z-index: 2;
     position: absolute;
-    top: 200px;
+    top: 430px;
     margin: 0;
 }
 
 .imageContainer{
     max-height: 90vh;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 20px;
+    img{
+        max-width: 1200px;
+    }
 }
 
 h2{
@@ -136,7 +139,7 @@ a{
     font-size: 5rem;
     color: $accent-color;
     gap: 50px;
-    text-shadow: 2px 2px $light-color;
+    text-shadow: 5px 5px $light-color;
     transition: 0.5s all ease;
 }
 
@@ -147,20 +150,12 @@ a{
     align-items: center;
     justify-content: space-evenly;
 
-    &:hover{
-        color: $darker-color;
-        transform: scale(1.2);
-        text-shadow: 2px 2px $second-accent-color;
-        .iconDescription{
-            display: block;
-            font-size: 1.6rem;
-            color: $darker-color;
-        }
-    }
+    &:hover,
     &:focus{
         color: $darker-color;
         transform: scale(1.2);
-        text-shadow: 2px 2px $second-accent-color;
+        font-weight: 700;
+        text-shadow: 5px 5px $second-accent-color;
         .iconDescription{
             display: block;
             font-size: 1.6rem;
@@ -175,6 +170,7 @@ a{
     color: $accent-color;
     li{
         list-style: none;
+        margin-bottom: 5px;
     }
 
     a{
@@ -186,17 +182,16 @@ a{
 
         &:visited{
             color: $second-accent-color;
+            border: none;
         }
         &:active{
             color: $accent-color;
         }
-        &:hover{
-            color: $darker-color;
-            transform: scale(1.2);
-        }
+        &:hover,
         &:focus{
             color: $darker-color;
-            transform: scale(1.4);
+            text-decoration: none;
+            transform: scale(1.2);
         }
     }
 

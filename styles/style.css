@@ -196,23 +196,26 @@ p {
 
 h1 {
   font-family: "Londrina Outline", cursive;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 25px;
-  font-size: 10rem;
+  font-size: 15rem;
   text-align: center;
   letter-spacing: 5px;
   z-index: 2;
   position: absolute;
-  top: 200px;
+  top: 430px;
   margin: 0;
 }
 
 .imageContainer {
   max-height: 90vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 20px;
+}
+
+.imageContainer img {
+  max-width: 1200px;
 }
 
 h2 {
@@ -308,7 +311,7 @@ a:hover, a:focus {
   font-size: 5rem;
   color: #c06471;
   gap: 50px;
-  text-shadow: 2px 2px #fcd582;
+  text-shadow: 5px 5px #fcd582;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -330,27 +333,15 @@ a:hover, a:focus {
           justify-content: space-evenly;
 }
 
-.tool-container:hover {
+.tool-container:hover, .tool-container:focus {
   color: #378263;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  text-shadow: 2px 2px #f0aeb0;
+  font-weight: 700;
+  text-shadow: 5px 5px #f0aeb0;
 }
 
-.tool-container:hover .iconDescription {
-  display: block;
-  font-size: 1.6rem;
-  color: #378263;
-}
-
-.tool-container:focus {
-  color: #378263;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  text-shadow: 2px 2px #f0aeb0;
-}
-
-.tool-container:focus .iconDescription {
+.tool-container:hover .iconDescription, .tool-container:focus .iconDescription {
   display: block;
   font-size: 1.6rem;
   color: #378263;
@@ -364,6 +355,7 @@ a:hover, a:focus {
 
 .socialMedia li {
   list-style: none;
+  margin-bottom: 5px;
 }
 
 .socialMedia a {
@@ -376,22 +368,18 @@ a:hover, a:focus {
 
 .socialMedia i:visited {
   color: #f0aeb0;
+  border: none;
 }
 
 .socialMedia i:active {
   color: #c06471;
 }
 
-.socialMedia i:hover {
+.socialMedia i:hover, .socialMedia i:focus {
   color: #378263;
+  text-decoration: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.socialMedia i:focus {
-  color: #378263;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
 }
 
 /*FOOTIE FOOTER*/
@@ -425,7 +413,7 @@ footer span {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb" "gameOfPotterBlurb gameOfPotterPreview";
+      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "textileePreview textileeBlurb" "gameOfPotterBlurb gameOfPotterPreview";
 }
 
 .worksGrid h3 {
@@ -603,12 +591,12 @@ form {
   -ms-grid-rows: (min-content)[3];
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "name email" "message message" "submit subtmi";
+      grid-template-areas: "name email" "message message" "submit subtmi";
 }
 
 fieldset {
   border: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -623,25 +611,25 @@ fieldset input, fieldset textarea, fieldset .submit {
 fieldset input::-webkit-input-placeholder, fieldset textarea::-webkit-input-placeholder, fieldset .submit::-webkit-input-placeholder {
   color: #378263;
   opacity: 0.3;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 fieldset input:-ms-input-placeholder, fieldset textarea:-ms-input-placeholder, fieldset .submit:-ms-input-placeholder {
   color: #378263;
   opacity: 0.3;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 fieldset input::-ms-input-placeholder, fieldset textarea::-ms-input-placeholder, fieldset .submit::-ms-input-placeholder {
   color: #378263;
   opacity: 0.3;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 fieldset input::placeholder, fieldset textarea::placeholder, fieldset .submit::placeholder {
   color: #378263;
   opacity: 0.3;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 fieldset input:focus, fieldset textarea:focus, fieldset .submit:focus {
