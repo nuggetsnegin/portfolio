@@ -78,8 +78,6 @@ a{
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
-
-    &:hover,
     &:focus{
         border: 2px dashed $accent-color;
     }
@@ -138,6 +136,12 @@ a{
 
     .aboutParagraph{
         grid-area: paragraph;
+        a{
+            &:hover{
+                color: $light-color;
+                background-color: $darker-color;
+            }
+        }
     }
 
     .aboutImage{

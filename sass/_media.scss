@@ -21,7 +21,7 @@
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 900px){
 
     .aboutImage{
         img{
@@ -30,9 +30,17 @@
         }
     }
 
-    ul{
-        display: block;
+    .contactBlurb{
+        padding: 20px 35px;
     }
+
+    .contactGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "contactBlurb"
+        "form";
+      }
+      
 
 
 }
