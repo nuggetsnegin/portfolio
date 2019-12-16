@@ -119,8 +119,7 @@ a{
 
     &:hover,
     &:focus{
-        color: $light-color;
-        background-color: $darker-color;
+        border: 2px dashed $accent-color;
     }
 }
 

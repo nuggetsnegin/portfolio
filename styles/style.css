@@ -300,8 +300,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #ffa9e0;
-  background-color: #323b63;
+  border: 2px dashed #0055A5;
 }
 
 .accent {
