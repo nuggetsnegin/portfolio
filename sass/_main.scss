@@ -112,18 +112,43 @@ a{
     }
 }
 
+.accent{
+    color: $accent-color;
+    font-weight: 700;
+}
+
 /*ABOUT*/
 .about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title title title"
+    "paragraph paragraph image";
     p{
         font-size: 2.5rem;
         padding: 0px 20px;
     }
 
-}
+    h2{
+        grid-area: title;
+    }
 
-.accent{
-    color: $accent-color;
-    font-weight: 700;
+    .aboutParagraph{
+        grid-area: paragraph;
+    }
+
+    .aboutImage{
+        padding-top: 30px;
+        grid-area: image;
+        img{
+            width: 360px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 10px 10px $light-color;
+        }
+    }
 }
 
 /*TOOLS*/
