@@ -7,6 +7,10 @@
     a{
         background-color: transparent;
         padding: 0;
+        &:hover{
+            color: $accent-color;
+            border-bottom: 2px solid $second-accent-color;
+        }
     }
 
 }

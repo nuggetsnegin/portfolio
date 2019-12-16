@@ -44,11 +44,9 @@
     padding: 0;
     background-color: transparent;
 
-    &:hover {
-      border-bottom: 2px solid $second-accent-color;
-    }
-
+    &:hover,
     &:focus {
+      color: $accent-color;
       border-bottom: 2px solid $second-accent-color;
     }
   }

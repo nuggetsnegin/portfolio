@@ -35,14 +35,14 @@ p{
 h1{
     font-family: $heading-font;
     color: $bg-color;
-    font-size: 15rem;
-    text-shadow: 5px 5px black; 
+    font-size: 10rem;
+    text-shadow: 5px 5px $darker-color;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: -5px;
+    text-transform: lowercase;
     z-index: 2;
     position: absolute;
-    top: 470px;
+    top: 200px;
+    left: 800px;
     margin: 0;
 }
 
