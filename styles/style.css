@@ -196,6 +196,8 @@ p {
 
 h1 {
   font-family: "Londrina Outline", cursive;
+  color: white;
+  /*to fix*/
   padding: 20px;
   border-radius: 25px;
   font-size: 15rem;
@@ -562,22 +564,6 @@ footer span {
   color: #fcd582;
   font-weight: 700;
   padding: 5px;
-}
-
-.color1 {
-  color: #c06471;
-}
-
-.color2 {
-  color: #378263;
-}
-
-.color3 {
-  color: #f0aeb0;
-}
-
-.color4 {
-  color: #fcd582;
 }
 
 .contact h2 {
