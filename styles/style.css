@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Gaegu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -189,6 +189,7 @@ html {
 
 body {
   font-family: "Inconsolata", monospace;
+  color: #151515;
 }
 
 p {
@@ -203,7 +204,8 @@ h1 {
   font-size: 15rem;
   text-shadow: 5px 5px black;
   text-align: center;
-  letter-spacing: 5px;
+  text-transform: uppercase;
+  letter-spacing: -5px;
   z-index: 2;
   position: absolute;
   top: 470px;
@@ -219,14 +221,12 @@ h1 {
 
 .imageContainer img {
   max-width: 1200px;
-  -webkit-box-shadow: 5px 5px #b84551;
-          box-shadow: 5px 5px #b84551;
 }
 
 h2 {
-  background-color: #b84551;
+  background-color: #0055A5;
   padding: 20px;
-  color: #fcd582;
+  color: #ffa9e0;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -238,15 +238,15 @@ h2::after {
   position: relative;
   width: 90%;
   height: 2px;
-  background-color: #fcd582;
+  background-color: #ffa9e0;
   left: 50px;
   bottom: 5px;
 }
 
 h3 {
-  background-color: #f0aeb0;
+  background-color: #fcc1df;
   padding: 10px;
-  color: #378263;
+  color: #323b63;
   font-size: 4rem;
   text-transform: lowercase;
 }
@@ -276,20 +276,20 @@ header {
 }
 
 a {
-  background-color: #f0aeb0;
-  color: #378263;
+  background-color: #fcc1df;
+  color: #323b63;
   text-decoration: none;
   padding: 10px;
   font-weight: 700;
 }
 
 a:hover, a:focus {
-  color: #f0aeb0;
-  background-color: #378263;
+  color: #fcc1df;
+  background-color: #323b63;
 }
 
 .accent {
-  color: #b84551;
+  color: #0055A5;
   font-weight: 700;
 }
 
@@ -336,8 +336,8 @@ a:hover, a:focus {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  -webkit-box-shadow: 10px 10px #fcd582;
-          box-shadow: 10px 10px #fcd582;
+  -webkit-box-shadow: 10px 10px #ffa9e0;
+          box-shadow: 10px 10px #ffa9e0;
 }
 
 /*TOOLS*/
@@ -353,9 +353,9 @@ a:hover, a:focus {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   font-size: 5rem;
-  color: #b84551;
+  color: #0055A5;
   gap: 50px;
-  text-shadow: 5px 5px #fcd582;
+  text-shadow: 5px 5px #ffa9e0;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -378,23 +378,23 @@ a:hover, a:focus {
 }
 
 .tool-container:hover, .tool-container:focus {
-  color: #378263;
+  color: #323b63;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 700;
-  text-shadow: 5px 5px #f0aeb0;
+  text-shadow: 5px 5px #fcc1df;
 }
 
 .tool-container:hover .iconDescription, .tool-container:focus .iconDescription {
   display: block;
   font-size: 1.6rem;
-  color: #378263;
+  color: #323b63;
 }
 
 /*SOCIAL MEDIA*/
 .socialMedia {
   font-size: 4rem;
-  color: #b84551;
+  color: #0055A5;
 }
 
 .socialMedia li {
@@ -407,20 +407,20 @@ a:hover, a:focus {
 }
 
 .socialMedia i {
-  color: #b84551;
+  color: #0055A5;
 }
 
 .socialMedia i:visited {
-  color: #f0aeb0;
+  color: #fcc1df;
   border: none;
 }
 
 .socialMedia i:active {
-  color: #b84551;
+  color: #0055A5;
 }
 
 .socialMedia i:hover, .socialMedia i:focus {
-  color: #378263;
+  color: #323b63;
   text-decoration: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -428,7 +428,7 @@ a:hover, a:focus {
 
 /*FOOTIE FOOTER*/
 footer {
-  background-color: #378263;
+  background-color: #323b63;
   padding: 8px;
   color: #e1e1d4;
 }
@@ -441,7 +441,7 @@ footer p {
 }
 
 footer span {
-  color: #f0aeb0;
+  color: #fcc1df;
 }
 
 .works img {
@@ -491,13 +491,13 @@ footer span {
 .furiendFinderBlurb a:hover,
 .gameOfPotterBlurb a:hover,
 .textileeBlurb a:hover {
-  border-bottom: 2px solid #f0aeb0;
+  border-bottom: 2px solid #fcc1df;
 }
 
 .furiendFinderBlurb a:focus,
 .gameOfPotterBlurb a:focus,
 .textileeBlurb a:focus {
-  border-bottom: 2px solid #f0aeb0;
+  border-bottom: 2px solid #fcc1df;
 }
 
 .felineFeelingBlurb {
@@ -561,26 +561,26 @@ footer span {
 }
 
 .madeWith {
-  background-color: #b84551;
-  color: #fcd582;
+  background-color: #0055A5;
+  color: #ffa9e0;
   font-weight: 700;
   padding: 5px;
 }
 
 .color1 {
-  color: #b84551;
+  color: #0055A5;
 }
 
 .color2 {
-  color: #378263;
+  color: #323b63;
 }
 
 .color3 {
-  color: #f0aeb0;
+  color: #fcc1df;
 }
 
 .color4 {
-  color: #fcd582;
+  color: #ffa9e0;
 }
 
 .flicker {
@@ -969,38 +969,38 @@ fieldset {
 
 fieldset input, fieldset textarea, fieldset .submit {
   padding: 10px;
-  color: #378263;
-  background: #f0aeb0;
+  color: #323b63;
+  background: #fcc1df;
   border-radius: 5px;
-  border: 2px solid #378263;
+  border: 2px solid #323b63;
 }
 
 fieldset input::-webkit-input-placeholder, fieldset textarea::-webkit-input-placeholder, fieldset .submit::-webkit-input-placeholder {
-  color: #378263;
+  color: #323b63;
   opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input:-ms-input-placeholder, fieldset textarea:-ms-input-placeholder, fieldset .submit:-ms-input-placeholder {
-  color: #378263;
+  color: #323b63;
   opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input::-ms-input-placeholder, fieldset textarea::-ms-input-placeholder, fieldset .submit::-ms-input-placeholder {
-  color: #378263;
+  color: #323b63;
   opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input::placeholder, fieldset textarea::placeholder, fieldset .submit::placeholder {
-  color: #378263;
+  color: #323b63;
   opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input:focus, fieldset textarea:focus, fieldset .submit:focus {
-  border: 2px dashed #378263;
+  border: 2px dashed #323b63;
 }
 
 fieldset input:focus::-webkit-input-placeholder, fieldset textarea:focus::-webkit-input-placeholder, fieldset .submit:focus::-webkit-input-placeholder {
@@ -1054,15 +1054,15 @@ textarea {
   border: none;
   padding: 10px;
   text-transform: uppercase;
-  color: #378263;
+  color: #323b63;
 }
 
 .submit:focus {
-  border: 2px dashed #378263;
+  border: 2px dashed #323b63;
 }
 
 .submit:hover {
-  color: #f0aeb0;
-  background-color: #378263;
-  border: 2px solid #f0aeb0;
+  color: #fcc1df;
+  background-color: #323b63;
+  border: 2px solid #fcc1df;
 }

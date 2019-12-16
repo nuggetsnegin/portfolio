@@ -1,12 +1,13 @@
 /*MAIN*/
 $bg-color: #e1e1d4;
-$accent-color: #b84551;
-$light-color: #fcd582;
-$darker-color: #378263;
-$second-accent-color: #f0aeb0;
+$accent-color: #0055A5;
+$almost-black: #151515;
+$light-color: rgb(255, 169, 224);
+$darker-color: #323b63;
+$second-accent-color: #fcc1df;
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 
 //  'Londrina Shadow', cursive;
@@ -21,6 +22,7 @@ html{
 
 body{
     font-family: $main-font;
+    color: $almost-black;
     // background-image: url(assets/bg.png);
 }
 
@@ -36,7 +38,8 @@ h1{
     font-size: 15rem;
     text-shadow: 5px 5px black; 
     text-align: center;
-    letter-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: -5px;
     z-index: 2;
     position: absolute;
     top: 470px;
@@ -49,7 +52,6 @@ h1{
     margin-bottom: 20px;
     img{
         max-width: 1200px;
-        box-shadow: 5px 5px $accent-color;
     }
 }
 
@@ -89,7 +91,6 @@ h3{
 header{
     display: flex;
     justify-content: center;
-    // align-items: center;
 }
 
 .imageContainer{
