@@ -391,7 +391,7 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -548,10 +548,6 @@ footer span {
   padding: 0;
 }
 
-.contact a:hover, .contact a:focus {
-  border-bottom: 2px solid #378263;
-}
-
 .contactGrid {
   display: -ms-grid;
   display: grid;
@@ -610,25 +606,25 @@ fieldset input, fieldset textarea, fieldset .submit {
 
 fieldset input::-webkit-input-placeholder, fieldset textarea::-webkit-input-placeholder, fieldset .submit::-webkit-input-placeholder {
   color: #378263;
-  opacity: 0.3;
+  opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input:-ms-input-placeholder, fieldset textarea:-ms-input-placeholder, fieldset .submit:-ms-input-placeholder {
   color: #378263;
-  opacity: 0.3;
+  opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input::-ms-input-placeholder, fieldset textarea::-ms-input-placeholder, fieldset .submit::-ms-input-placeholder {
   color: #378263;
-  opacity: 0.3;
+  opacity: 0.8;
   font-size: 2rem;
 }
 
 fieldset input::placeholder, fieldset textarea::placeholder, fieldset .submit::placeholder {
   color: #378263;
-  opacity: 0.3;
+  opacity: 0.8;
   font-size: 2rem;
 }
 
@@ -679,6 +675,8 @@ textarea {
 }
 
 .submit {
+  font-weight: 700;
+  letter-spacing: 3px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: submit;

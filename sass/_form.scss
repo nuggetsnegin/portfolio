@@ -7,10 +7,10 @@
         background-color: transparent;
         padding: 0;
 
-        &:hover,
-        &:focus{
-            border-bottom: 2px solid $darker-color;
-        }
+        // &:hover,
+        // &:focus{
+        //     border-bottom: 2px solid $darker-color;
+        // }
     }
 
 }
@@ -55,10 +55,9 @@ fieldset{
         background: $second-accent-color;
         border-radius: 5px;
         border: 2px solid $darker-color;
-
         &::placeholder{
             color: $darker-color;
-            opacity: 0.3;
+            opacity: 0.8;
             font-size: 2rem;
         }
         &:focus{
@@ -88,6 +87,8 @@ textarea{
 }
 
 .submit{
+    font-weight: 700;
+    letter-spacing: 3px;
     grid-area: submit;
     border: none;
     padding: 10px;

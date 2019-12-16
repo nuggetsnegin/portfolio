@@ -19,3 +19,4 @@ ScrollReveal().reveal('.tools', { delay: 400 });
 
 
 ScrollReveal().reveal('.about', { delay: 400 });
+
