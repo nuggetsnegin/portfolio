@@ -281,7 +281,7 @@ a:focus {
 
 .imageContainer {
   position: relative;
-  min-height: 90vh;
+  max-height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 20px;
@@ -305,6 +305,7 @@ a:focus {
 
 .about p {
   font-size: 2.5rem;
+  line-height: 1.4;
 }
 
 .about h2 {
@@ -1241,5 +1242,6 @@ textarea {
   }
   .imageContainer p {
     font-size: 3rem;
+    background-color: #e1e1d4;
   }
 }
