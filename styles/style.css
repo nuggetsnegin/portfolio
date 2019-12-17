@@ -305,7 +305,6 @@ a:focus {
 
 .about p {
   font-size: 2.5rem;
-  padding: 0px 20px;
 }
 
 .about h2 {
@@ -450,10 +449,6 @@ footer span {
 
 .worksGrid h3 {
   margin: 0;
-}
-
-.worksGrid p {
-  padding: 0;
 }
 
 .worksGrid a:hover {

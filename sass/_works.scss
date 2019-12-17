@@ -1,7 +1,11 @@
-.works img {
-  max-height: 300px;
-  max-width: 590px;
+.works{
+  img {
+    max-height: 300px;
+    max-width: 590px;
+  }
 }
+
+
 
 .worksGrid {
   display: grid;
@@ -17,10 +21,6 @@
 
   h3 {
     margin: 0;
-  }
-
-  p {
-    padding: 0;
   }
 
   a{
