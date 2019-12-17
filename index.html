@@ -35,17 +35,35 @@
             </div>
         <img src="assets/header.png" alt="Photograph of Negin Sauermann petting imaginary cats" />
 
-        <nav>
+        <nav class="desktopNav">
           <ul>
-            <li>
-              <a href="#home">home</a>
-              <a href="#about">about</a>
-              <a href="#tools">tools</a>
-              <a href="#works">portfolio</a>
-              <a href="#contact">contact</a>
-            </li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#tools">tools</a></li>
+              <li><a href="#works">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
           </ul>
-        </nav>
+        </nav><!--desktop nav-->
+
+        <div class="button-container" id="toggle">
+          <div class="button">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+        </div>
+    
+        <div class="overlay" id="overlay">
+          <nav class="overlayNav">
+            <ul>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#tools">tools</a></li>
+              <li><a href="#works">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+        </div>
 
       </div><!--imageContainer-->
     </div><!--wrapper-->
@@ -251,7 +269,7 @@
       <section class="contact">
         <h2>Contact</h2>
         <div class="contactGrid">
-          <div class="contactBlurb" data-aos="fade-up-right">
+          <div class="contactBlurb" data-aos="fade-up-left">
             <p>
               Want to talk about why I own 3 cats? Or maybe something on my website excites you (<span class="accent">I
                 hope it was my cat

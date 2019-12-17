@@ -864,14 +864,13 @@ nav {
 
 nav ul {
   list-style: none;
-  font-size: 2rem;
 }
 
 nav li {
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -882,12 +881,13 @@ nav li {
 
 nav a {
   background-color: transparent;
+  font-weight: 400;
+  border-right: 2px solid #ffa9e0;
   color: #0055A5;
 }
 
-nav a:hover {
-  border-left: 2px solid #ffa9e0;
-  font-weight: 400;
+nav a:hover, nav a:focus {
+  font-weight: 700;
 }
 
 @media (max-width: 1250px) {

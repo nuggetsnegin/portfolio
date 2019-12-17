@@ -5,21 +5,22 @@ nav{
     z-index: 3;
     ul{
         list-style: none;
-        font-size: 2rem;
     }
     li{
+        font-size: 2rem;
         display: flex;
-        padding: 5px;
         justify-content: space-evenly;
         writing-mode: vertical-rl;
     }
 
     a{
         background-color: transparent;
+        font-weight: 400;
+        border-right: 2px solid $light-color;
         color: $accent-color;
-        &:hover{
-            border-left: 2px solid $light-color;
-            font-weight: 400;
+        &:hover,
+        &:focus{
+            font-weight: 700;
         }
     }
 }
