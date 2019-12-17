@@ -13,7 +13,7 @@ btn.addEventListener('click', event => {
 
 AOS.init({
   disable: function() {
-    const maxWidth = 500;
+    const maxWidth = 600;
     return window.innerWidth < maxWidth;
   }
 });
