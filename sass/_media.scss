@@ -1,6 +1,14 @@
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   body {
     overflow-x: hidden; /*fix aos causing scroll with not enough space for animation*/
+  }
+
+  .desktopNav{
+    display: none;
+  }
+
+  .mobileMenu{
+    display: block;
   }
 
   .about p {

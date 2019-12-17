@@ -891,12 +891,14 @@ textarea {
 }
 
 /*TABLET & MOBILE NAV*/
+.mobileMenu {
+  display: none;
+}
+
 .mobileTabletNav ul {
   display: none;
-  z-index: 10;
+  z-index: 5;
   color: #0055A5;
-  width: 500px;
-  height: 500px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -904,15 +906,25 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 30%;
   position: fixed;
-  background-color: transparent;
 }
 
 .mobileTabletNav ul li {
   font-size: 5rem;
+  padding: 30px 0px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   list-style: none;
+}
+
+.mobileTabletNav ul a {
+  background-color: transparent;
+}
+
+.mobileTabletNav ul a:hover, .mobileTabletNav ul a:focus {
+  border-bottom: 3px solid #0055A5;
 }
 
 .navTarget {
@@ -927,9 +939,7 @@ textarea {
   border: none;
   border-radius: 50%;
   padding: 0;
-  background: #0055A5;
-  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+  background: #323b63;
   line-height: 0.6;
   text-align: center;
   /*button dividers*/
@@ -987,7 +997,7 @@ textarea {
   content: "";
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 169, 224, 0.7);
+  background-color: rgba(255, 169, 224, 0.8);
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   -webkit-clip-path: circle(30px at calc(100% - 65px) 65px);
@@ -1021,10 +1031,16 @@ textarea {
           transform: rotate(45deg);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   body {
     overflow-x: hidden;
     /*fix aos causing scroll with not enough space for animation*/
+  }
+  .desktopNav {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
   }
   .about p {
     font-size: 2rem;
