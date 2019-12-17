@@ -25,6 +25,22 @@
 <body>
 
   <header id="home">
+
+    <div class="mobileMenu">
+      <button class="navTarget" type="button" aria-label="toggle menu">
+        <span></span> <!--for hamburger lines-->
+        <nav class="mobileTabletNav">
+          <ul class="secondNav">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#tools">tools</a></li>
+            <li><a href="#works">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+    </div>
+
+
     <div class="wrapper">
       <div class="imageContainer">
           <h1>
@@ -44,27 +60,6 @@
               <li><a href="#contact">contact</a></li>
           </ul>
         </nav><!--desktop nav-->
-
-        <div class="button-container" id="toggle">
-          <div class="button">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-          </div>
-        </div>
-    
-        <div class="overlay" id="overlay">
-          <nav class="overlayNav">
-            <ul>
-              <li><a href="#home">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#tools">tools</a></li>
-              <li><a href="#works">portfolio</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-
       </div><!--imageContainer-->
     </div><!--wrapper-->
   </header>
@@ -332,6 +327,7 @@
 
   <script src="https://kit.fontawesome.com/2b1610438e.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/scripts/nav.js"></script>
   <script>
     AOS.init();
   </script>
