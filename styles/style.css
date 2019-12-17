@@ -363,7 +363,8 @@ a:focus {
 
 /*TOOLS*/
 .iconDescription {
-  display: none;
+  font-size: 1.6rem;
+  opacity: 0;
 }
 
 .toolsIcons {
@@ -407,8 +408,9 @@ a:focus {
 }
 
 .tool-container:hover .iconDescription, .tool-container:focus .iconDescription {
-  display: block;
-  font-size: 1.6rem;
+  opacity: 1;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
   color: #323b63;
 }
 

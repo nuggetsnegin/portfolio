@@ -171,7 +171,8 @@ a{
 
 /*TOOLS*/
 .iconDescription{
-    display: none;
+    font-size: 1.6rem;
+    opacity: 0;
 }
 
 .toolsIcons{
@@ -199,8 +200,8 @@ a{
         font-weight: 700;
         text-shadow: 5px 5px $light-color;
         .iconDescription{
-            display: block;
-            font-size: 1.6rem;
+            opacity: 1;
+            transition: 0.5s all ease;
             color: $darker-color;
         }
     }
