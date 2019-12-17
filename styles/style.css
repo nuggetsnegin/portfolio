@@ -1224,6 +1224,9 @@ textarea {
 }
 
 @media (max-width: 430px) {
+  .mobileTabletNav ul li {
+    font-size: 2.7rem;
+  }
   h2 {
     font-size: 2.7rem;
   }
@@ -1238,6 +1241,6 @@ textarea {
     font-size: 1.7rem;
   }
   footer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
