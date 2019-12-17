@@ -149,5 +149,112 @@
             width: 100%;
             height: 100%;
         }
+        margin-bottom: 30%;;
     }
+}
+
+@media (max-width: 555px){
+
+  .toolsIcons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h2{
+    font-size: 4rem;
+  }
+
+  .about {
+    p{
+      margin: 0;
+    }
+    grid-template-columns: 1fr;
+    padding: 0;
+      grid-template-areas:
+        "title"
+        "paragraphOne"
+        "image"
+        "paragraphTwo"
+        "paragraphThree";
+
+        .aboutParagraphThree p{
+          padding-bottom: 20px;
+        }
+  }
+
+  .aboutImage{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about .aboutImage img {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer p{
+    font-size: 1.7rem;
+  }
+
+  .contact h2{
+    margin-bottom: 0;
+  }
+
+  .formGrid{ /*collapse form grid into columns*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .worksGrid p{
+    line-height: 1;
+  }
+
+}
+
+@media(max-width: 476px){
+
+  .imageContainer{
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 2.5rem;
+    }
+  }
+
+  .mobileTabletNav ul li {
+    font-size: 4rem;
+    text-align: right;
+  }
+
+  footer p{
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width: 430px){
+
+  h2{
+    font-size: 2.7rem;
+  }
+
+  .imageContainer{
+    h1{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.6rem;
+      padding: 0;
+    }
+  }
+
+  fieldset{
+    font-size: 1.7rem;
+  }
+
+  footer p{
+    font-size: 1.2rem;
+  }
+
+
 }
