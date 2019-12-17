@@ -10,3 +10,10 @@ btn.addEventListener('click', event => {
     nav.style.cssText = 'display: none';
   }
 })
+
+AOS.init({
+  disable: function() {
+    var maxWidth = 450;
+    return window.innerWidth < maxWidth;
+  }
+});
