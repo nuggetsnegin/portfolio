@@ -281,7 +281,7 @@ a:focus {
 
 .imageContainer {
   position: relative;
-  max-height: 90vh;
+  min-height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 20px;
@@ -1232,5 +1232,14 @@ textarea {
   }
   footer p {
     font-size: 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .imageContainer h1 {
+    font-size: 5.5rem;
+  }
+  .imageContainer p {
+    font-size: 3rem;
   }
 }

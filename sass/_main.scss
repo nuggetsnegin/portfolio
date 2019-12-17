@@ -107,7 +107,7 @@ a{
 
 .imageContainer{
     position: relative;
-    max-height: 90vh;
+    min-height: 90vh;
     object-fit: contain;
     margin-bottom: 20px;
     img{
