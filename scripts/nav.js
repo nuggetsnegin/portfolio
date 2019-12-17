@@ -13,9 +13,4 @@ btn.addEventListener('click', event => {
 
 AOS.init({
   disable: 'phone'
-  // disable: function() {
-  //   const maxWidth = 600;
-  //   console.log('call');
-  //   return window.innerWidth < maxWidth;
-  // }
 });
