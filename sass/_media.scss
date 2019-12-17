@@ -3,11 +3,11 @@
     overflow-x: hidden; /*fix aos causing scroll with not enough space for animation*/
   }
 
-  .desktopNav{
+  .desktopNav {
     display: none;
   }
 
-  .mobileMenu{
+  .mobileMenu {
     display: block;
   }
 
@@ -34,7 +34,7 @@
   }
 
   .contactBlurb {
-    padding: 20px 35px;
+    padding: 5px 5px;
   }
 
   .contactGrid {
@@ -73,9 +73,42 @@
   }
 
   .worksGrid {
-    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "felineFeelingBlurb"
+      "felineFeelingPreview"
+      "wishyWashyBlurb"
+      "wishyWashyPreview"
+      "furiendFinderBlurb"
+      "furiendFinderPreview"
+      "textileeBlurb"
+      "textileePreview"
+      "gameOfPotterBlurb"
+      "gameOfPotterPreview";
+
     p {
-      font-size: 1.6rem;
+      font-size: 2rem;
+    }
+
+    .felineFeelingBlurb,
+    .wishyWashyBlurb,
+    .furiendFinderBlurb,
+    .textileeBlurb,
+    .gameOfPotterBlurb {
+      margin-bottom: 5px;
+    }
+
+    .felineFeelingPreview,
+    .wishyWashyPreview,
+    .furiendFinderPreview,
+    .textileePreview,
+    .gameOfPotterPreview {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      margin-bottom: 30%;
     }
 
     span {
@@ -92,96 +125,53 @@
     font-size: 2.5rem;
   }
 
-  form{
+  form {
     display: block; /*collapsing social media icons*/
   }
 
-  ul{
-      margin: 0;
+  ul {
+    margin: 0;
   }
 
-  li{
-      display: inline;
+  li {
+    display: inline;
   }
 }
 
-
-@media (max-width: 600px){
-
-    h3{
-        font-size: 4rem;
-    }
-
-    .worksGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-          "felineFeelingBlurb"
-          "felineFeelingPreview"
-          "wishyWashyBlurb"
-          "wishyWashyPreview"
-          "furiendFinderBlurb"
-          "furiendFinderPreview"
-          "textileeBlurb"
-          "textileePreview"
-          "gameOfPotterBlurb"
-          "gameOfPotterPreview";
-
-          p{
-              font-size: 2rem;
-          }
-    }
-
-    .felineFeelingBlurb,
-    .wishyWashyBlurb,
-    .furiendFinderBlurb,
-    .textileeBlurb,
-    .gameOfPotterBlurb{
-        margin-bottom: 5px;
-    }
-    
-    .felineFeelingPreview,
-    .wishyWashyPreview,
-    .furiendFinderPreview,
-    .textileePreview,
-    .gameOfPotterPreview{
-        img{
-            width: 100%;
-            height: 100%;
-        }
-        margin-bottom: 30%;;
-    }
+@media (max-width: 600px) {
+  h3 {
+    font-size: 4rem;
+  }
 }
 
-@media (max-width: 555px){
-
+@media (max-width: 555px) {
   .toolsIcons {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  h2{
+  h2 {
     font-size: 4rem;
   }
 
   .about {
-    p{
+    p {
       margin: 0;
     }
     grid-template-columns: 1fr;
     padding: 0;
-      grid-template-areas:
-        "title"
-        "paragraphOne"
-        "image"
-        "paragraphTwo"
-        "paragraphThree";
+    grid-template-areas:
+      "title"
+      "paragraphOne"
+      "image"
+      "paragraphTwo"
+      "paragraphThree";
 
-        .aboutParagraphThree p{
-          padding-bottom: 20px;
-        }
+    .aboutParagraphThree p {
+      padding-bottom: 20px;
+    }
   }
 
-  .aboutImage{
+  .aboutImage {
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -192,32 +182,31 @@
     height: 200px;
   }
 
-  footer p{
+  footer p {
     font-size: 1.7rem;
   }
 
-  .contact h2{
+  .contact h2 {
     margin-bottom: 0;
   }
 
-  .formGrid{ /*collapse form grid into columns*/
+  .formGrid {
+    /*collapse form grid into columns*/
     display: flex;
     flex-direction: column;
   }
 
-  .worksGrid p{
+  .worksGrid p {
     line-height: 1;
   }
-
 }
 
-@media(max-width: 476px){
-
-  .imageContainer{
-    h1{
+@media (max-width: 476px) {
+  .imageContainer {
+    h1 {
       font-size: 4rem;
     }
-    p{
+    p {
       font-size: 2.5rem;
     }
   }
@@ -227,38 +216,35 @@
     text-align: right;
   }
 
-  footer p{
+  footer p {
     font-size: 1.4rem;
   }
 }
 
-@media(max-width: 430px){
-
+@media (max-width: 430px) {
   .mobileTabletNav ul li {
     font-size: 2.7rem;
   }
 
-  h2{
+  h2 {
     font-size: 2.7rem;
   }
 
-  .imageContainer{
-    h1{
+  .imageContainer {
+    h1 {
       font-size: 3rem;
     }
-    p{
+    p {
       font-size: 1.6rem;
       padding: 0;
     }
   }
 
-  fieldset{
+  fieldset {
     font-size: 1.7rem;
   }
 
-  footer p{
+  footer p {
     font-size: 1rem;
   }
-
-
 }
