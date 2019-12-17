@@ -1,0 +1,25 @@
+nav{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 3;
+    ul{
+        list-style: none;
+        font-size: 2rem;
+    }
+    li{
+        display: flex;
+        padding: 5px;
+        justify-content: space-evenly;
+        writing-mode: vertical-rl;
+    }
+
+    a{
+        background-color: transparent;
+        color: $accent-color;
+        &:hover{
+            border-left: 2px solid $light-color;
+            font-weight: 400;
+        }
+    }
+}

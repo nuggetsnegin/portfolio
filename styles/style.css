@@ -855,6 +855,41 @@ textarea {
           transform: scale(1.2);
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  z-index: 3;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 2rem;
+}
+
+nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+nav a {
+  background-color: transparent;
+  color: #0055A5;
+}
+
+nav a:hover {
+  border-left: 2px solid #ffa9e0;
+  font-weight: 400;
+}
+
 @media (max-width: 1250px) {
   body {
     overflow-x: hidden;
