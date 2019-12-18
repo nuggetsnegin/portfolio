@@ -1173,6 +1173,7 @@ textarea {
   }
   .about p {
     margin: 0;
+    padding: 0px 10px;
   }
   .about .aboutParagraphThree p {
     padding-bottom: 20px;
@@ -1208,6 +1209,7 @@ textarea {
   }
   .worksGrid p {
     line-height: 1;
+    padding: 0px 10px;
   }
 }
 
