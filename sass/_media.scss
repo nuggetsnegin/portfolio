@@ -213,6 +213,12 @@
     flex-direction: column;
   }
 
+  .name,
+  .email,
+  .message{
+    margin-bottom: 5px;
+  }
+
   .worksGrid p {
     line-height: 1;
     padding: 0px 10px;
@@ -232,12 +238,6 @@
   .mobileTabletNav ul li {
     font-size: 4rem;
     text-align: right;
-  }
-
-  .name,
-  .email,
-  .message{
-    margin-bottom: 5px;
   }
 
   footer p {
