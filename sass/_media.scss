@@ -53,6 +53,18 @@
       "paragraphTwo paragraphTwo image"
       "paragraphThree paragraphThree paragraphThree";
   }
+
+  .contact h2{
+    margin-top: 0;
+  }
+
+  .gameOfPotterPreview{
+    margin-bottom: 5px;
+  }
+
+  .worksGrid{
+    gap: 10px;
+  }
 }
 
 @media (max-width: 700px) {
