@@ -1162,6 +1162,9 @@ textarea {
   h2 {
     font-size: 4rem;
   }
+  h2::after {
+    height: 1px;
+  }
   .about {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

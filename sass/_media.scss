@@ -164,6 +164,9 @@
 
   h2 {
     font-size: 4rem;
+    &::after{
+      height: 1px;
+    }
   }
 
   .about {
