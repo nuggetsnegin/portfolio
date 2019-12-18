@@ -241,11 +241,30 @@
   }
 
   fieldset {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .works p{
+    font-size: 1.8rem;
+    padding: 0;
+  }
+
+  .formGrid{
+    margin: 5px;
   }
 
   footer p {
     font-size: 1rem;
+  }
+  .contact p{
+    font-size: 1.7rem;
+    padding: 0;
+  }
+
+  .about p{
+    font-size: 1.8rem;
+    padding: 0;
   }
 }
 
@@ -260,4 +279,5 @@
       background-color: $bg-color;
     }
   }
+
 }
