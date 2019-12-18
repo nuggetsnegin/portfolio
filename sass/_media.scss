@@ -33,8 +33,9 @@
     height: 300px;
   }
 
-  .contactBlurb {
-    padding: 5px 5px;
+  .contactBlurb p{
+    font-size: 1.8rem;
+    padding: 20px 10px;
   }
 
   .contactGrid {
@@ -120,7 +121,7 @@
         width: 100%;
         height: 100%;
       }
-      margin-bottom: 30%;
+      margin-bottom: 20%;
     }
 
     span {
@@ -228,6 +229,12 @@
     text-align: right;
   }
 
+  .name,
+  .email,
+  .message{
+    margin-bottom: 5px;
+  }
+
   footer p {
     font-size: 1.4rem;
   }
@@ -262,16 +269,8 @@
     padding: 0;
   }
 
-  .formGrid{
-    margin: 5px;
-  }
-
   footer p {
     font-size: 1rem;
-  }
-  .contact p{
-    font-size: 1.7rem;
-    padding: 0;
   }
 
   .about p{
@@ -280,6 +279,7 @@
   }
 }
 
+/*for small height screen resolution - fix accent*/
 @media (max-height: 600px){
 
   .imageContainer {
