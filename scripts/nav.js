@@ -12,5 +12,6 @@ btn.addEventListener('click', event => {
 })
 
 AOS.init({
-  disable: 'phone mobile tablet'
+  disable: 'phone',
+  disable: 'tablet'
 });
