@@ -32,8 +32,8 @@
     <div class="wrapper">
 
       <div class="mobileMenu">
-        <button class="navTarget" type="button" aria-label="toggle menu">
-          <span></span> <!--for hamburger lines-->
+        <button class="navTarget" type="button" aria-label="Open toggle menu" id="menu-toggle">
+          <span aria-hidden="true"></span> <!--for hamburger lines-->
           <nav class="mobileTabletNav">
             <ul class="secondNav">
               <li><a href="#home">home</a></li>
@@ -284,6 +284,7 @@
           <form action="https://formspree.io/xjvkdnaq" method="POST" id="contact">
             <fieldset>
               <div class="formGrid">
+                <!--.to fix: use label as placeholder and remove visuallyHidden-->
                 <label for="name" class="visuallyHidden">Name</label>
                 <input type="text" type="name" name="name" class="name" required="required"
                   placeholder="Negin's Number 1 Fan" />
