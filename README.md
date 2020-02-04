@@ -17,9 +17,9 @@ Fully responsive portfolio website designed in Sketch and made with HTML5 and CS
 
 ## Stretch Goals
 * Re-design portfolio using mobile first approach for more learning! :D
-~* Optimize cover photo using srcset~
+* ~Optimize cover photo using srcset~
 * Remove animations on mobile?
-~* Figure out a way to implement AOS on mobile without hurting the user experience.~
+* ~Figure out a way to implement AOS on mobile without hurting the user experience.~
 
 ## Authors
 
