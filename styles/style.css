@@ -328,14 +328,14 @@ a:focus {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   grid-template-areas:
     'title title title'
-    'paragraphOne paragraphOne image'
-    'paragraphTwo paragraphTwo image'
-    'paragraphThree paragraphThree image';
+    'paragraphOne paragraphOne'
+    'paragraphTwo paragraphTwo'
+    'paragraphThree paragraphThree';
 }
 
 .about p {
