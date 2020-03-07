@@ -197,6 +197,9 @@
   .about .aboutImage img {
     width: 200px;
     height: 200px;
+    -webkit-box-shadow: 5px 5px #ffa9e0;
+    box-shadow: 5px 5px #ffa9e0;
+    margin-bottom: 5px;
   }
 
   footer p {
