@@ -1,6 +1,6 @@
 /*MAIN*/
 $bg-color: #e1e1d4;
-$accent-color: #0055A5;
+$accent-color: #0055a5;
 $almost-black: #151515;
 $light-color: rgb(255, 169, 224);
 $darker-color: #323b63;
@@ -8,219 +8,218 @@ $darker-color: #323b63;
 $heading-font: 'Londrina Outline', cursive;
 $main-font: 'Inconsolata', monospace;
 
-html{
-    background-color: $bg-color;
-    font-size: 62.5%;
+html {
+  background-color: $bg-color;
+  font-size: 62.5%;
 }
 
-body{
-    font-family: $main-font;
-    color: $almost-black;
+body {
+  font-family: $main-font;
+  color: $almost-black;
 }
 
-.wrapper{
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
 }
 
-p{
-    font-size: 2rem;
-    padding: 0px 10px;
-    line-height: 1.2;
+p {
+  font-size: 2rem;
+  padding: 0px 10px;
+  line-height: 1.2;
 }
 
-h1{
-    color: $bg-color;
-    padding: 0;
-    font-size: 7rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    z-index: 2;
-    position: absolute;
-    bottom: 0px;
-    right: 5px;
-    margin: 0;
+h1 {
+  color: $bg-color;
+  padding: 0;
+  font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  margin: 0;
 }
 
-h2{
-    background-color: $accent-color;
-    padding: 20px;
-    color: $light-color;
-    font-size: 7rem;
-    text-transform: lowercase;
-    letter-spacing: 5px;
+h2 {
+  background-color: $accent-color;
+  padding: 20px;
+  color: $light-color;
+  font-size: 7rem;
+  text-transform: lowercase;
+  letter-spacing: 5px;
 
-    &::after{
-        content: "";
-        display: block;
-        position: relative;
-        width: 90%;
-        height: 2px;
-        background-color: $light-color;
-        left: 50px;
-        bottom: 5px;
-    }
-}
-
-h3{
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 2px;
     background-color: $light-color;
-    padding: 10px;
-    color: $darker-color;
-    font-size: 4rem;
-    text-transform: lowercase;
+    left: 50px;
+    bottom: 5px;
+  }
 }
 
-a{
-    background-color: $light-color;
-    color: $darker-color;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 700;
-    &:focus{
-        border: 2px dashed $accent-color;
-    }
+h3 {
+  background-color: $light-color;
+  padding: 10px;
+  color: $darker-color;
+  font-size: 4rem;
+  text-transform: lowercase;
 }
 
-.accent{
-    color: $accent-color;
-    font-weight: 700;
+a {
+  background-color: $light-color;
+  color: $darker-color;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  &:focus {
+    border: 2px dashed $accent-color;
+  }
+}
+
+.accent {
+  color: $accent-color;
+  font-weight: 700;
 }
 
 /*HEADER*/
-.accentText{
-    position: absolute;
-    z-index: 2;
-    bottom: -38px;
-    right: -5px;
-    p{
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 5px;
-        margin: 0;
-        text-shadow: none;
-        font-family: $main-font;
-        color: $accent-color;
-        font-size: 4rem;
-    }
+.accentText {
+  position: absolute;
+  z-index: 2;
+  bottom: -38px;
+  right: -5px;
+  p {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    margin: 0;
+    text-shadow: none;
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 4rem;
+  }
 }
 
-.imageContainer{
-    position: relative;
-    max-height: 90vh;
-    object-fit: contain;
-    margin-bottom: 20px;
-    img{
-        max-width: 1200px;
-        width: 100%;
-    }
+.imageContainer {
+  position: relative;
+  max-height: 90vh;
+  object-fit: contain;
+  margin-bottom: 20px;
+  img {
+    max-width: 1200px;
+    width: 100%;
+  }
 }
 
 /*ABOUT*/
-.about{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "title title title"
-    "paragraphOne paragraphOne image"
-    "paragraphTwo paragraphTwo image"
-    "paragraphThree paragraphThree image";
-    p{
-        font-size: 2.5rem;
-        line-height: 1.4;
-    }
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'title title title'
+    'paragraphOne paragraphOne image'
+    'paragraphTwo paragraphTwo image'
+    'paragraphThree paragraphThree image';
+  p {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
 
-    h2{
-        grid-area: title;
-    }
+  h2 {
+    grid-area: title;
+  }
 
-    a{
-        &:hover{
-            color: $light-color;
-            background-color: $darker-color;
-        }
+  a {
+    &:hover {
+      color: $light-color;
+      background-color: $darker-color;
+      transition: ease-in 0.2s;
     }
+  }
 
-    .aboutParagraphOne{
-        grid-area: paragraphOne;
+  .aboutParagraphOne {
+    grid-area: paragraphOne;
+  }
+
+  .aboutParagraphTwo {
+    grid-area: paragraphTwo;
+  }
+
+  .aboutParagraphThree {
+    grid-area: paragraphThree;
+  }
+
+  .aboutImage {
+    padding-top: 30px;
+    grid-area: image;
+    img {
+      width: 360px;
+      height: 360px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      box-shadow: 10px 10px $light-color;
     }
-
-    .aboutParagraphTwo{
-        grid-area: paragraphTwo;
-    }
-
-    .aboutParagraphThree{
-        grid-area: paragraphThree;
-    }
-
-
-    .aboutImage{
-        padding-top: 30px;
-        grid-area: image;
-        img{
-            width: 360px;
-            height: 360px;
-            object-fit: cover;
-            object-position: top center;
-            border-radius: 50%;
-            box-shadow: 10px 10px $light-color;
-        }
-    }
+  }
 }
 
 /*TOOLS*/
-.iconDescription{
-    font-size: 1.6rem;
-    opacity: 0;
+.iconDescription {
+  font-size: 1.6rem;
+  opacity: 0;
 }
 
-.toolsIcons{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    font-size: 5rem;
-    color: $accent-color;
-    gap: 50px;
+.toolsIcons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  font-size: 5rem;
+  color: $accent-color;
+  gap: 50px;
+  text-shadow: 5px 5px $light-color;
+  transition: 0.5s all ease;
+}
+
+.tool-container {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &:hover,
+  &:focus {
+    color: $darker-color;
+    transform: scale(1.2);
+    font-weight: 700;
     text-shadow: 5px 5px $light-color;
-    transition: 0.5s all ease;
-}
-
-.tool-container{
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    &:hover,
-    &:focus{
-        color: $darker-color;
-        transform: scale(1.2);
-        font-weight: 700;
-        text-shadow: 5px 5px $light-color;
-        .iconDescription{
-            opacity: 1;
-            transition: 0.5s all ease;
-            color: $darker-color;
-        }
+    .iconDescription {
+      opacity: 1;
+      transition: 0.5s all ease;
+      color: $darker-color;
     }
+  }
 }
 
 /*FOOTIE FOOTER*/
-footer{
-    background-color: $darker-color;
-    padding: 8px;
-    color: $bg-color;
+footer {
+  background-color: $darker-color;
+  padding: 8px;
+  color: $bg-color;
 
-    p{
-        margin: 0;
-        font-size: 2rem;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    span{
-        color: $light-color;
-    }
+  p {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  span {
+    color: $light-color;
+  }
 }
-

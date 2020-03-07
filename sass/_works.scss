@@ -1,11 +1,13 @@
-.works{
+.works {
   img {
-    max-height: 300px;
-    max-width: 590px;
+    height: 300px;
+    width: 590px;
+    border-radius: 20px;
+    -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
+    -moz-box-shadow: 11px 11px 0px -3px #0055a5;
+    box-shadow: 11px 11px 0px -3px #0055a5;
   }
 }
-
-
 
 .worksGrid {
   display: grid;
@@ -13,20 +15,21 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "felineFeelingBlurb felineFeelingPreview"
-    "wishyWashyPreview wishyWashyBlurb"
-    "furiendFinderBlurb furiendFinderPreview"
-    "textileePreview textileeBlurb"
-    "gameOfPotterBlurb gameOfPotterPreview";
+    'felineFeelingBlurb felineFeelingPreview'
+    'wishyWashyPreview wishyWashyBlurb'
+    'furiendFinderBlurb furiendFinderPreview'
+    'gameOfPotterPreview gameOfPotterBlurb'
+    'textileeBlurb textileePreview';
 
   h3 {
     margin: 0;
   }
 
-  a{
-    &:hover{
+  a {
+    &:hover {
       background-color: $darker-color;
       color: $light-color;
+      transition: ease-in 0.2s;
     }
   }
 }
@@ -37,7 +40,7 @@
 .furiendFinderPreview,
 .wishyWashyBlurb,
 .wishyWashyPreview,
-.textileeBlurb,
+,
 .textileePreview,
 .gameOfPotterBlurb,
 .gameOfPotterPreview {
@@ -100,9 +103,9 @@
   grid-area: gameOfPotterPreview;
 }
 
-.madeWith{
-    background-color: $accent-color;
-    color: $light-color;
-    font-weight: 700;
-    padding: 5px;
+.madeWith {
+  background-color: $accent-color;
+  color: $light-color;
+  font-weight: 700;
+  padding: 5px;
 }
