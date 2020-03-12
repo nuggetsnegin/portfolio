@@ -183,6 +183,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   background-color: #e1e1d4;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -225,7 +226,7 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   width: 90%;
@@ -300,7 +301,7 @@ a:focus {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: 'title title title' 'paragraphOne paragraphOne image' 'paragraphTwo paragraphTwo image' 'paragraphThree paragraphThree image';
+      grid-template-areas: "title title title" "paragraphOne paragraphOne image" "paragraphTwo paragraphTwo image" "paragraphThree paragraphThree image";
 }
 
 .about p {
@@ -1070,14 +1071,14 @@ textarea {
   .contactGrid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'contactBlurb' 'form';
+        grid-template-areas: "contactBlurb" "form";
   }
   .worksGrid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: 'felineFeelingBlurb' 'felineFeelingPreview' 'wishyWashyBlurb' 'wishyWashyPreview' 'furiendFinderBlurb' 'furiendFinderPreview' 'gameOfPotterBlurb' 'gameOfPotterPreview' 'textileeBlurb' 'textileePreview';
+        grid-template-areas: "felineFeelingBlurb" "felineFeelingPreview" "wishyWashyBlurb" "wishyWashyPreview" "furiendFinderBlurb" "furiendFinderPreview" "gameOfPotterBlurb" "gameOfPotterPreview" "textileeBlurb" "textileePreview";
   }
   .worksGrid p {
     font-size: 2rem;
@@ -1111,7 +1112,7 @@ textarea {
 
 @media (max-width: 800px) {
   .about {
-        grid-template-areas: 'title title title' 'paragraphOne paragraphOne image' 'paragraphTwo paragraphTwo image' 'paragraphThree paragraphThree paragraphThree';
+        grid-template-areas: "title title title" "paragraphOne paragraphOne image" "paragraphTwo paragraphTwo image" "paragraphThree paragraphThree paragraphThree";
   }
   .contact h2 {
     margin-top: 0;
@@ -1129,7 +1130,7 @@ textarea {
     font-size: 3rem;
   }
   .about {
-        grid-template-areas: 'title title title' 'paragraphOne paragraphOne image' 'paragraphTwo paragraphTwo paragraphTwo' 'paragraphThree paragraphThree paragraphThree';
+        grid-template-areas: "title title title" "paragraphOne paragraphOne image" "paragraphTwo paragraphTwo paragraphTwo" "paragraphThree paragraphThree paragraphThree";
   }
 }
 
@@ -1173,7 +1174,7 @@ textarea {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding: 0;
-        grid-template-areas: 'title' 'paragraphOne' 'image' 'paragraphTwo' 'paragraphThree';
+        grid-template-areas: "title" "paragraphOne" "image" "paragraphTwo" "paragraphThree";
   }
   .about p {
     margin: 0;
@@ -1280,5 +1281,14 @@ textarea {
   .imageContainer p {
     font-size: 3rem;
     background-color: #e1e1d4;
+  }
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

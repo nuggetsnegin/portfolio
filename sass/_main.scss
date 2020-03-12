@@ -5,12 +5,13 @@ $almost-black: #151515;
 $light-color: rgb(255, 169, 224);
 $darker-color: #323b63;
 
-$heading-font: 'Londrina Outline', cursive;
-$main-font: 'Inconsolata', monospace;
+$heading-font: "Londrina Outline", cursive;
+$main-font: "Inconsolata", monospace;
 
 html {
   background-color: $bg-color;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -52,7 +53,7 @@ h2 {
   letter-spacing: 5px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     width: 90%;
@@ -122,10 +123,10 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    'title title title'
-    'paragraphOne paragraphOne image'
-    'paragraphTwo paragraphTwo image'
-    'paragraphThree paragraphThree image';
+    "title title title"
+    "paragraphOne paragraphOne image"
+    "paragraphTwo paragraphTwo image"
+    "paragraphThree paragraphThree image";
   p {
     font-size: 2.5rem;
     line-height: 1.4;

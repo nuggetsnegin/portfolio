@@ -41,24 +41,24 @@
   .contactGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
-      'contactBlurb'
-      'form';
+      "contactBlurb"
+      "form";
   }
 
   .worksGrid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      'felineFeelingBlurb'
-      'felineFeelingPreview'
-      'wishyWashyBlurb'
-      'wishyWashyPreview'
-      'furiendFinderBlurb'
-      'furiendFinderPreview'
-      'gameOfPotterBlurb'
-      'gameOfPotterPreview'
-      'textileeBlurb'
-      'textileePreview';
+      "felineFeelingBlurb"
+      "felineFeelingPreview"
+      "wishyWashyBlurb"
+      "wishyWashyPreview"
+      "furiendFinderBlurb"
+      "furiendFinderPreview"
+      "gameOfPotterBlurb"
+      "gameOfPotterPreview"
+      "textileeBlurb"
+      "textileePreview";
 
     p {
       font-size: 2rem;
@@ -93,10 +93,10 @@
 @media (max-width: 800px) {
   .about {
     grid-template-areas:
-      'title title title'
-      'paragraphOne paragraphOne image'
-      'paragraphTwo paragraphTwo image'
-      'paragraphThree paragraphThree paragraphThree';
+      "title title title"
+      "paragraphOne paragraphOne image"
+      "paragraphTwo paragraphTwo image"
+      "paragraphThree paragraphThree paragraphThree";
   }
 
   .contact h2 {
@@ -123,10 +123,10 @@
   }
   .about {
     grid-template-areas:
-      'title title title'
-      'paragraphOne paragraphOne image'
-      'paragraphTwo paragraphTwo paragraphTwo'
-      'paragraphThree paragraphThree paragraphThree';
+      "title title title"
+      "paragraphOne paragraphOne image"
+      "paragraphTwo paragraphTwo paragraphTwo"
+      "paragraphThree paragraphThree paragraphThree";
   }
 }
 
@@ -177,11 +177,11 @@
     grid-template-columns: 1fr;
     padding: 0;
     grid-template-areas:
-      'title'
-      'paragraphOne'
-      'image'
-      'paragraphTwo'
-      'paragraphThree';
+      "title"
+      "paragraphOne"
+      "image"
+      "paragraphTwo"
+      "paragraphThree";
 
     .aboutParagraphThree p {
       padding-bottom: 20px;
@@ -297,5 +297,14 @@
       font-size: 3rem;
       background-color: $bg-color;
     }
+  }
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
