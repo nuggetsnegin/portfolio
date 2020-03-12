@@ -472,7 +472,7 @@ footer span {
 .link span {
   position: relative;
   display: inline-block;
-  color: #0055a5;
+  color: #323b63;
 }
 
 .link span::before {
@@ -516,7 +516,7 @@ span.wavy::before {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: 'felineFeelingBlurb felineFeelingPreview' 'wishyWashyPreview wishyWashyBlurb' 'furiendFinderBlurb furiendFinderPreview' 'gameOfPotterPreview gameOfPotterBlurb' 'textileeBlurb textileePreview';
+      grid-template-areas: "felineFeelingBlurb felineFeelingPreview" "wishyWashyPreview wishyWashyBlurb" "furiendFinderBlurb furiendFinderPreview" "gameOfPotterPreview gameOfPotterBlurb" "textileeBlurb textileePreview";
 }
 
 .worksGrid h3 {
@@ -587,6 +587,11 @@ span.wavy::before {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: furiendFinderBlurb;
+}
+
+.furiendFinderBlurb a:hover, .furiendFinderBlurb a:focus {
+  background-color: transparent;
+  border-bottom: none;
 }
 
 .furiendFinderPreview {
@@ -733,6 +738,11 @@ span.wavy::before {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: contactBlurb;
+}
+
+.contactBlurb a:hover, .contactBlurb a:focus {
+  background-color: transparent;
+  border-bottom: none;
 }
 
 .contactBlurb p {
@@ -911,7 +921,6 @@ textarea {
 
 .socialMedia i:visited {
   color: #ffa9e0;
-  border: none;
 }
 
 .socialMedia i:active {
@@ -920,6 +929,7 @@ textarea {
 
 .socialMedia i:hover, .socialMedia i:focus {
   color: #323b63;
+  border-bottom: none;
   text-decoration: none;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);

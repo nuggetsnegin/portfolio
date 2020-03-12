@@ -15,11 +15,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    'felineFeelingBlurb felineFeelingPreview'
-    'wishyWashyPreview wishyWashyBlurb'
-    'furiendFinderBlurb furiendFinderPreview'
-    'gameOfPotterPreview gameOfPotterBlurb'
-    'textileeBlurb textileePreview';
+    "felineFeelingBlurb felineFeelingPreview"
+    "wishyWashyPreview wishyWashyBlurb"
+    "furiendFinderBlurb furiendFinderPreview"
+    "gameOfPotterPreview gameOfPotterBlurb"
+    "textileeBlurb textileePreview";
 
   h3 {
     margin: 0;
@@ -81,6 +81,13 @@
 
 .furiendFinderBlurb {
   grid-area: furiendFinderBlurb;
+  a {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-bottom: none;
+    }
+  }
 }
 
 .furiendFinderPreview {

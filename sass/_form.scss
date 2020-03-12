@@ -20,6 +20,13 @@
 
 .contactBlurb {
   grid-area: contactBlurb;
+  a {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-bottom: none;
+    }
+  }
 
   p {
     margin: 0;
@@ -123,7 +130,6 @@ textarea {
 
     &:visited {
       color: $light-color;
-      border: none;
     }
     &:active {
       color: $accent-color;
@@ -131,6 +137,7 @@ textarea {
     &:hover,
     &:focus {
       color: $darker-color;
+      border-bottom: none;
       text-decoration: none;
       transform: scale(1.2);
     }
