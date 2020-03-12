@@ -15,11 +15,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
-    "felineFeelingBlurb felineFeelingPreview"
-    "wishyWashyPreview wishyWashyBlurb"
-    "furiendFinderBlurb furiendFinderPreview"
-    "gameOfPotterPreview gameOfPotterBlurb"
-    "textileeBlurb textileePreview";
+    'felineFeelingBlurb felineFeelingPreview'
+    'wishyWashyPreview wishyWashyBlurb'
+    'furiendFinderBlurb furiendFinderPreview'
+    'gameOfPotterPreview gameOfPotterBlurb'
+    'textileeBlurb textileePreview';
 
   h3 {
     margin: 0;
@@ -111,8 +111,22 @@
 }
 
 .madeWith {
-  background-color: $accent-color;
-  color: $light-color;
+  color: #0055a5;
+  /* color: #ffa9e0; */
   font-weight: 700;
   padding: 5px;
+  position: relative;
+}
+
+.madeWith:after {
+  content: '';
+  background: #ffa9e0;
+  position: absolute;
+  display: block;
+  height: 50%;
+  width: 100%;
+  top: 50%;
+  left: -5%;
+  opacity: 0.8;
+  z-index: -1;
 }
