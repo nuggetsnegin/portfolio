@@ -493,8 +493,8 @@ footer span {
 
 span.wavy::before {
   padding-bottom: 5px;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
+  -webkit-text-decoration-style: line;
+          text-decoration-style: line;
   text-underline-offset: 6px;
   /*firefox only 70 only :( */
   color: #0055a5;
