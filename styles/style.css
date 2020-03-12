@@ -245,6 +245,8 @@ h3 {
 }
 
 a {
+  text-decoration: none;
+  cursor: pointer;
   background-color: #ffa9e0;
   color: #323b63;
   text-decoration: none;
@@ -316,9 +318,13 @@ a:focus {
   grid-area: title;
 }
 
+.about a {
+  background: rgba(255, 206, 213, 0.6);
+}
+
 .about a:hover {
   color: #ffa9e0;
-  background-color: #323b63;
+  background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
@@ -433,6 +439,65 @@ footer p {
 
 footer span {
   color: #ffa9e0;
+}
+
+/*ANIMATE SQUIGGLY ON HOVER*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.link {
+  font-weight: 900;
+  position: relative;
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+.link:hover span::before,
+.link:focus span::before {
+  background: none;
+  font-weight: 100;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.link span {
+  position: relative;
+  display: inline-block;
+  color: #0055a5;
+}
+
+.link span::before {
+  z-index: 3;
+  position: absolute;
+  content: attr(data-content);
+  color: #323b63;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #323b63;
+          text-decoration-color: #323b63;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 275ms ease;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+span.wavy::before {
+  padding-bottom: 5px;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  text-underline-offset: 6px;
+  /*firefox only 70 only :( */
+  color: #0055a5;
 }
 
 .works img {

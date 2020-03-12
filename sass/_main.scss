@@ -73,6 +73,8 @@ h3 {
 }
 
 a {
+  text-decoration: none;
+  cursor: pointer;
   background-color: $light-color;
   color: $darker-color;
   text-decoration: none;
@@ -137,9 +139,10 @@ a {
   }
 
   a {
+    background: rgba(255, 206, 213, 0.6);
     &:hover {
       color: $light-color;
-      background-color: $darker-color;
+      background: none;
       transition: ease-in 0.2s;
     }
   }
@@ -223,4 +226,47 @@ footer {
   span {
     color: $light-color;
   }
+}
+
+/*ANIMATE SQUIGGLY ON HOVER*/
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.link {
+  font-weight: 900;
+  position: relative;
+  transition: clip-path 275ms ease;
+  &:hover span::before,
+  &:focus span::before {
+    background: none;
+    font-weight: 100;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    color: $accent-color;
+    &::before {
+      z-index: 3;
+      position: absolute;
+      content: attr(data-content);
+      color: $darker-color;
+      text-decoration: underline;
+      text-decoration-color: $darker-color;
+      clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+      transition: clip-path 275ms ease;
+    }
+  }
+}
+
+span.wavy::before {
+  padding-bottom: 5px;
+  text-decoration-style: wavy;
+  text-underline-offset: 6px; /*firefox only 70 only :( */
+  color: $accent-color;
 }
