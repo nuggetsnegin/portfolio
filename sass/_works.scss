@@ -15,10 +15,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
+    'gameOfPotterPreview gameOfPotterBlurb'
     'felineFeelingBlurb felineFeelingPreview'
     'wishyWashyPreview wishyWashyBlurb'
     'furiendFinderBlurb furiendFinderPreview'
-    'gameOfPotterPreview gameOfPotterBlurb'
     'textileeBlurb textileePreview';
 
   h3 {
@@ -40,7 +40,6 @@
 .furiendFinderPreview,
 .wishyWashyBlurb,
 .wishyWashyPreview,
-,
 .textileePreview,
 .gameOfPotterBlurb,
 .gameOfPotterPreview {

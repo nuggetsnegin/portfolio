@@ -25,6 +25,10 @@
       line-height: 1.8;
     }
   }
+
+  .contact h2{
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -49,14 +53,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+      "gameOfPotterBlurb"
+      "gameOfPotterPreview"
       "felineFeelingBlurb"
       "felineFeelingPreview"
       "wishyWashyBlurb"
       "wishyWashyPreview"
       "furiendFinderBlurb"
       "furiendFinderPreview"
-      "gameOfPotterBlurb"
-      "gameOfPotterPreview"
       "textileeBlurb"
       "textileePreview";
 
