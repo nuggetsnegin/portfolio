@@ -47,7 +47,7 @@ h1 {
 h2 {
   background-color: $accent-color;
   padding: 20px;
-  color: $light-color;
+  color: $bg-color;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -167,8 +167,8 @@ a {
       height: 360px;
       object-fit: cover;
       object-position: top center;
-      border-radius: 50%;
-      box-shadow: 10px 10px $light-color;
+      border-radius: 45%;
+      box-shadow: 5px 5px $accent-color;
     }
   }
 }

@@ -219,7 +219,7 @@ h1 {
 h2 {
   background-color: #0055a5;
   padding: 20px;
-  color: #ffa9e0;
+  color: #ecece8;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -365,9 +365,9 @@ a:focus {
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px #ffa9e0;
-          box-shadow: 10px 10px #ffa9e0;
+  border-radius: 45%;
+  -webkit-box-shadow: 5px 5px #0055a5;
+          box-shadow: 5px 5px #0055a5;
 }
 
 /*TOOLS*/
