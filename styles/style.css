@@ -1195,13 +1195,6 @@ textarea {
   .about p {
     font-size: 2rem;
   }
-  .works img {
-    width: 90%;
-    height: 90%;
-  }
-  .works span {
-    line-height: 1.8;
-  }
   .contact h2 {
     margin-bottom: 10px;
   }
@@ -1222,36 +1215,10 @@ textarea {
         grid-template-areas: "contactBlurb" "form";
   }
   .worksGrid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "gameOfPotterBlurb" "gameOfPotterPreview" "felineFeelingBlurb" "felineFeelingPreview" "wishyWashyBlurb" "wishyWashyPreview" "furiendFinderBlurb" "furiendFinderPreview" "textileeBlurb" "textileePreview";
+    display: block;
   }
   .worksGrid p {
     font-size: 2rem;
-  }
-  .worksGrid .felineFeelingBlurb,
-  .worksGrid .wishyWashyBlurb,
-  .worksGrid .furiendFinderBlurb,
-  .worksGrid .textileeBlurb,
-  .worksGrid .gameOfPotterBlurb {
-    margin-bottom: 5px;
-  }
-  .worksGrid .felineFeelingPreview,
-  .worksGrid .wishyWashyPreview,
-  .worksGrid .furiendFinderPreview,
-  .worksGrid .textileePreview,
-  .worksGrid .gameOfPotterPreview {
-    margin-bottom: 20%;
-  }
-  .worksGrid .felineFeelingPreview img,
-  .worksGrid .wishyWashyPreview img,
-  .worksGrid .furiendFinderPreview img,
-  .worksGrid .textileePreview img,
-  .worksGrid .gameOfPotterPreview img {
-    width: 100%;
-    height: 100%;
   }
   .worksGrid span {
     line-height: 2;
@@ -1264,9 +1231,6 @@ textarea {
   }
   .contact h2 {
     margin-top: 0;
-  }
-  .gameOfPotterPreview {
-    margin-bottom: 5px;
   }
 }
 
