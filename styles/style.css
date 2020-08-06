@@ -539,7 +539,6 @@ span.wavy::before {
 
 .furiendFinderBlurb a,
 .drawMyPetBlurb a,
-.furiendFinder2Blurb a,
 .textileeBlurb a {
   padding: 0;
   background-color: transparent;
@@ -548,8 +547,6 @@ span.wavy::before {
 .furiendFinderBlurb a:hover, .furiendFinderBlurb a:focus,
 .drawMyPetBlurb a:hover,
 .drawMyPetBlurb a:focus,
-.furiendFinder2Blurb a:hover,
-.furiendFinder2Blurb a:focus,
 .textileeBlurb a:hover,
 .textileeBlurb a:focus {
   color: #0055a5;
@@ -570,7 +567,9 @@ span.wavy::before {
 }
 
 .furiendFinder2Blurb {
-  grid-area: furiendFinderBlurb2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: furiendFinder2Blurb;
 }
 
 .furiendFinder2Preview {
