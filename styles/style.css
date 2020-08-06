@@ -359,6 +359,15 @@ a:focus {
   grid-area: paragraphTwo;
 }
 
+.about .aboutParagraphTwo a {
+  padding: 0px;
+}
+
+.about .aboutParagraphTwo a:focus {
+  border: none;
+  color: #e2b2d0;
+}
+
 .about .aboutParagraphThree {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -384,6 +393,22 @@ a:focus {
   border-radius: 45%;
   -webkit-box-shadow: 5px 5px #0055a5;
           box-shadow: 5px 5px #0055a5;
+}
+
+.about .aboutImage .regular-img {
+  position: relative;
+  display: inline-block;
+}
+
+.about .aboutImage .suprise-img {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+}
+
+.about .aboutImage:hover .suprise-img {
+  display: inline-block;
 }
 
 /*TOOLS*/

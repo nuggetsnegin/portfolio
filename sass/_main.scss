@@ -170,6 +170,13 @@ a {
 
   .aboutParagraphTwo {
     grid-area: paragraphTwo;
+    a{
+      padding: 0px;
+    }
+    a:focus{
+      border: none;
+      color: $light-color;
+    }
   }
 
   .aboutParagraphThree {
@@ -186,6 +193,19 @@ a {
       object-position: top center;
       border-radius: 45%;
       box-shadow: 5px 5px $accent-color;
+    }
+    .regular-img{
+      position: relative;
+      display: inline-block;
+    }
+    .suprise-img{
+      display: none;
+      position: absolute;
+      left: 0;
+      z-index: 99;
+    }
+    &:hover .suprise-img {
+      display: inline-block;
     }
   }
 }
