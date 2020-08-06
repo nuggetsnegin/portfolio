@@ -1,11 +1,11 @@
 .works {
   img {
-    height: 300px;
-    width: 590px;
-    border-radius: 20px;
-    -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
-    -moz-box-shadow: 11px 11px 0px -3px #0055a5;
-    box-shadow: 11px 11px 0px -3px #0055a5;
+    height: 80%;
+    width: 80%;
+    // border-radius: 20px;
+    // -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
+    // -moz-box-shadow: 11px 11px 0px -3px #0055a5;
+    // box-shadow: 11px 11px 0px -3px #0055a5;
   }
 }
 
@@ -51,7 +51,8 @@
 
 .furiendFinderBlurb,
 .drawMyPetBlurb,
-.textileeBlurb {
+.textileeBlurb,
+.furiendFinder2Blurb {
   a {
     padding: 0;
     background-color: transparent;

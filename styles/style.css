@@ -231,7 +231,7 @@ h2::after {
   position: relative;
   width: 90%;
   height: 5px;
-  background-color: #e2b2d0;
+  background-color: #ffc3bf;
   left: 50px;
   bottom: 5px;
 }
@@ -248,7 +248,7 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
-  background-color: #e2b2d0;
+  background-color: #ffc3bf;
   color: #323b63;
   text-decoration: none;
   padding: 10px;
@@ -324,7 +324,7 @@ a:focus {
 }
 
 .about a:hover {
-  color: #e2b2d0;
+  color: #ffc3bf;
   background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
@@ -386,7 +386,7 @@ a:focus {
       grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  text-shadow: 2px 2px #e2b2d0;
+  text-shadow: 2px 2px #ffc3bf;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -431,7 +431,7 @@ footer p {
 }
 
 footer span {
-  color: #e2b2d0;
+  color: #ffc3bf;
 }
 
 /*ANIMATE SQUIGGLY ON HOVER*/
@@ -494,11 +494,8 @@ span.wavy::before {
 }
 
 .works img {
-  height: 300px;
-  width: 590px;
-  border-radius: 20px;
-  -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
-  box-shadow: 11px 11px 0px -3px #0055a5;
+  height: 80%;
+  width: 80%;
 }
 
 .worksGrid {
@@ -518,7 +515,7 @@ span.wavy::before {
 
 .worksGrid a:hover {
   background-color: #323b63;
-  color: #e2b2d0;
+  color: #ffc3bf;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
@@ -539,7 +536,8 @@ span.wavy::before {
 
 .furiendFinderBlurb a,
 .drawMyPetBlurb a,
-.textileeBlurb a {
+.textileeBlurb a,
+.furiendFinder2Blurb a {
   padding: 0;
   background-color: transparent;
 }
@@ -548,10 +546,12 @@ span.wavy::before {
 .drawMyPetBlurb a:hover,
 .drawMyPetBlurb a:focus,
 .textileeBlurb a:hover,
-.textileeBlurb a:focus {
+.textileeBlurb a:focus,
+.furiendFinder2Blurb a:hover,
+.furiendFinder2Blurb a:focus {
   color: #0055a5;
   background-color: transparent;
-  border-bottom: 2px solid #e2b2d0;
+  border-bottom: 2px solid #ffc3bf;
 }
 
 .felineFeelingBlurb {
@@ -741,7 +741,7 @@ span.wavy::before {
 
 .contact a:hover {
   color: #0055a5;
-  border-bottom: 2px solid #e2b2d0;
+  border-bottom: 2px solid #ffc3bf;
 }
 
 .contactGrid {
@@ -806,7 +806,7 @@ fieldset textarea,
 fieldset .submit {
   padding: 10px;
   color: #323b63;
-  background: #e2b2d0;
+  background: #ffc3bf;
   border-radius: 5px;
   border: 2px solid #323b63;
 }
@@ -916,9 +916,9 @@ textarea {
 }
 
 .submit:hover {
-  color: #e2b2d0;
+  color: #ffc3bf;
   background-color: #323b63;
-  border: 2px solid #e2b2d0;
+  border: 2px solid #ffc3bf;
 }
 
 /*SOCIAL MEDIA*/
@@ -942,7 +942,7 @@ textarea {
 }
 
 .socialMedia i:visited {
-  color: #e2b2d0;
+  color: #ffc3bf;
 }
 
 .socialMedia i:active {
@@ -978,7 +978,7 @@ textarea {
 .desktopNav li {
   font-size: 2rem;
   margin-right: 10px;
-  border-bottom: 2px solid #e2b2d0;
+  border-bottom: 2px solid #ffc3bf;
 }
 
 .desktopNav a {
