@@ -188,7 +188,7 @@ html {
 
 body {
   font-family: "Inconsolata", monospace;
-  color: #151515;
+  color: #242424;
 }
 
 main {
@@ -243,7 +243,7 @@ h2::after {
   position: relative;
   width: 90%;
   height: 5px;
-  background-color: #0c0c0c;
+  background-color: #0055a5;
   left: 50px;
   bottom: 5px;
 }
@@ -260,7 +260,7 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
-  background-color: #0c0c0c;
+  background-color: #59597e;
   color: #323b63;
   text-decoration: none;
   padding: 10px;
@@ -287,8 +287,9 @@ a:focus {
 .accentText p {
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   margin: 0;
+  margin-right: -8px;
   text-shadow: none;
   font-family: "Inconsolata", monospace;
   color: #0055a5;
@@ -339,7 +340,7 @@ a:focus {
 }
 
 .about a:hover {
-  color: #0c0c0c;
+  color: #59597e;
   background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
@@ -401,7 +402,7 @@ a:focus {
       grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  text-shadow: 2px 2px #0c0c0c;
+  text-shadow: 2px 2px #59597e;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -446,7 +447,7 @@ footer p {
 }
 
 footer span {
-  color: #0c0c0c;
+  color: #59597e;
 }
 
 /*ANIMATE SQUIGGLY ON HOVER*/
@@ -530,7 +531,7 @@ span.wavy::before {
 
 .worksGrid a:hover {
   background-color: #323b63;
-  color: #0c0c0c;
+  color: #59597e;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
@@ -566,7 +567,7 @@ span.wavy::before {
 .furiendFinder2Blurb a:focus {
   color: #0055a5;
   background-color: transparent;
-  border-bottom: 2px solid #0c0c0c;
+  border-bottom: 2px solid #59597e;
 }
 
 .felineFeelingBlurb {
@@ -756,7 +757,7 @@ span.wavy::before {
 
 .contact a:hover {
   color: #0055a5;
-  border-bottom: 2px solid #0c0c0c;
+  border-bottom: 2px solid #59597e;
 }
 
 .contactGrid {
@@ -821,7 +822,7 @@ fieldset textarea,
 fieldset .submit {
   padding: 10px;
   color: #323b63;
-  background: #0c0c0c;
+  background: #59597e;
   border-radius: 5px;
   border: 2px solid #323b63;
 }
@@ -931,9 +932,9 @@ textarea {
 }
 
 .submit:hover {
-  color: #0c0c0c;
+  color: #59597e;
   background-color: #323b63;
-  border: 2px solid #0c0c0c;
+  border: 2px solid #59597e;
 }
 
 /*SOCIAL MEDIA*/
@@ -957,7 +958,7 @@ textarea {
 }
 
 .socialMedia i:visited {
-  color: #0c0c0c;
+  color: #59597e;
 }
 
 .socialMedia i:active {

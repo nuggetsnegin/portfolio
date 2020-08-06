@@ -1,8 +1,8 @@
 /*MAIN*/
 $bg-color: #f7f7f7;
 $accent-color: #0055a5;
-$almost-black: #151515;
-$light-color: rgb(12, 12, 12);
+$almost-black: #242424;
+$light-color: rgb(89, 89, 126);
 $darker-color: #323b63;
 
 $heading-font: "Londrina Outline", cursive;
@@ -70,7 +70,7 @@ h2 {
     position: relative;
     width: 90%;
     height: 5px;
-    background-color: $light-color;
+    background-color: $accent-color;
     left: 50px;
     bottom: 5px;
   }
@@ -112,8 +112,9 @@ a {
   p {
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin: 0;
+    margin-right: -8px;
     text-shadow: none;
     font-family: $main-font;
     color: $accent-color;
