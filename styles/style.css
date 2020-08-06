@@ -553,35 +553,13 @@ span.wavy::before {
   margin: 0;
 }
 
-.felineFeelingBlurb,
-.felineFeelingPreview,
-.furiendFinderBlurb,
-.furiendFinderPreview,
-.wishyWashyBlurb,
-.wishyWashyPreview,
-.textileePreview,
-.drawMyPetBlurb,
-.drawMyPetPreview,
-.furiendFinder2Blurb,
-.furiendFinder2Preview,
-.textileePreview,
-.textileeBlurb {
+.preview,
+.blurb {
   margin-bottom: 15%;
 }
 
-.felineFeelingBlurb .gh-link,
-.felineFeelingPreview .gh-link,
-.furiendFinderBlurb .gh-link,
-.furiendFinderPreview .gh-link,
-.wishyWashyBlurb .gh-link,
-.wishyWashyPreview .gh-link,
-.textileePreview .gh-link,
-.drawMyPetBlurb .gh-link,
-.drawMyPetPreview .gh-link,
-.furiendFinder2Blurb .gh-link,
-.furiendFinder2Preview .gh-link,
-.textileePreview .gh-link,
-.textileeBlurb .gh-link {
+.preview .gh-link,
+.blurb .gh-link {
   font-size: 2rem;
   margin-right: 15px;
 }
@@ -1195,7 +1173,7 @@ textarea {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1120px) {
   .about .aboutImage img {
     width: 300px;
     height: 300px;
@@ -1211,6 +1189,11 @@ textarea {
   }
   .worksGrid {
     display: block;
+  }
+  .worksGrid img {
+    width: 50%;
+    height: 50%;
+    margin-left: 15%;
   }
   .worksGrid p {
     font-size: 2rem;
