@@ -19,8 +19,8 @@
     'furiendFinder2Preview furiendFinder2Blurb'
     'furiendFinderBlurb furiendFinderPreview'
     'felineFeelingPreview felineFeelingBlurb'
-    'wishyWashyPreview wishyWashyBlurb'
-    'textileeBlurb textileePreview';
+    'textileeBlurb textileePreview'
+    'wishyWashyPreview wishyWashyBlurb';
 
   h3 {
     margin: 0;
@@ -97,10 +97,6 @@
 
 .furiendFinderPreview {
   grid-area: furiendFinderPreview;
-  img{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
 }
 
 .textileeBlurb {

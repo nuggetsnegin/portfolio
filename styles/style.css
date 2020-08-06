@@ -252,7 +252,7 @@ h2::after {
 h3 {
   color: #0055a5;
   padding: 10px 15px;
-  font-size: 4rem;
+  font-size: 6rem;
   text-transform: lowercase;
 }
 
@@ -546,7 +546,7 @@ span.wavy::before {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-      grid-template-areas: 'drawMyPetBlurb drawMyPetPreview' 'furiendFinder2Preview furiendFinder2Blurb' 'furiendFinderBlurb furiendFinderPreview' 'felineFeelingPreview felineFeelingBlurb' 'wishyWashyPreview wishyWashyBlurb' 'textileeBlurb textileePreview';
+      grid-template-areas: 'drawMyPetBlurb drawMyPetPreview' 'furiendFinder2Preview furiendFinder2Blurb' 'furiendFinderBlurb furiendFinderPreview' 'felineFeelingPreview felineFeelingBlurb' 'textileeBlurb textileePreview' 'wishyWashyPreview wishyWashyBlurb';
 }
 
 .worksGrid h3 {
@@ -622,13 +622,13 @@ span.wavy::before {
 }
 
 .wishyWashyBlurb {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: wishyWashyBlurb;
 }
 
 .wishyWashyPreview {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: wishyWashyPreview;
 }
@@ -650,19 +650,14 @@ span.wavy::before {
   grid-area: furiendFinderPreview;
 }
 
-.furiendFinderPreview img {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .textileeBlurb {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: textileeBlurb;
 }
 
 .textileePreview {
-  -ms-grid-row: 6;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: textileePreview;
 }
