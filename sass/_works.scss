@@ -1,7 +1,7 @@
 .works {
   img {
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     // border-radius: 20px;
     // -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
     // -moz-box-shadow: 11px 11px 0px -3px #0055a5;
@@ -16,7 +16,7 @@
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
     'drawMyPetPreview drawMyPetBlurb'
-    'furiendFinder2Blurb furiendFinder2Preview'
+    'furiendFinder2Preview furiendFinder2Blurb'
     'felineFeelingPreview felineFeelingBlurb'
     'furiendFinderBlurb furiendFinderPreview'
     'wishyWashyPreview wishyWashyBlurb'
@@ -26,13 +26,6 @@
     margin: 0;
   }
 
-  a {
-    &:hover {
-      background-color: $darker-color;
-      color: $light-color;
-      transition: ease-in 0.2s;
-    }
-  }
 }
 
 .felineFeelingBlurb,
@@ -45,24 +38,25 @@
 .drawMyPetBlurb,
 .drawMyPetPreview,
 .furiendFinder2Blurb,
-.furiendFinder2Preview {
+.furiendFinder2Preview,
+.textileePreview,
+.textileeBlurb {
   margin-bottom: 15%;
+
+  .gh-link{
+    font-size: 2rem;
+    margin-right: 15px;
+  }
 }
 
-.furiendFinderBlurb,
-.drawMyPetBlurb,
-.textileeBlurb,
-.furiendFinder2Blurb {
-  a {
+.a-links {
     padding: 0;
     background-color: transparent;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      background-color: transparent;
-      border-bottom: 2px solid $light-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: transparent;
+    border-bottom: 2px solid $light-color;
   }
 }
 
@@ -80,10 +74,6 @@
 
 .furiendFinder2Preview {
   grid-area: furiendFinder2Preview;
-  img{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
 }
 
 .wishyWashyBlurb {
@@ -107,6 +97,10 @@
 
 .furiendFinderPreview {
   grid-area: furiendFinderPreview;
+  img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 }
 
 .textileeBlurb {
