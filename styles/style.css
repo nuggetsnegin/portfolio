@@ -1265,6 +1265,9 @@ textarea {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .about .aboutImage:hover .suprise-img {
+    display: none !important;
+  }
   h2 {
     font-size: 4rem;
   }
@@ -1296,8 +1299,6 @@ textarea {
   .about .aboutImage img {
     width: 200px;
     height: 200px;
-    -webkit-box-shadow: 5px 5px #ffa9e0;
-    box-shadow: 5px 5px #ffa9e0;
     margin-bottom: 5px;
   }
   footer p {
