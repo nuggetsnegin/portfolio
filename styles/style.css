@@ -259,7 +259,7 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
-  background-color: #e2b2d0;
+  background-color: #ffd6db;
   color: #0055a5;
   text-decoration: none;
   padding: 10px;
@@ -339,7 +339,7 @@ a:focus {
 }
 
 .about a:hover {
-  color: #e2b2d0;
+  color: #ffd6db;
   background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
@@ -365,7 +365,7 @@ a:focus {
 
 .about .aboutParagraphTwo a:focus {
   border: none;
-  color: #e2b2d0;
+  color: #ffd6db;
 }
 
 .about .aboutParagraphThree {
@@ -426,7 +426,7 @@ a:focus {
       grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  text-shadow: 2px 2px #e2b2d0;
+  text-shadow: 2px 2px #ffd6db;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -471,7 +471,7 @@ footer p {
 }
 
 footer span {
-  color: #e2b2d0;
+  color: #ffd6db;
 }
 
 /*ANIMATE SQUIGGLY ON HOVER*/
@@ -546,7 +546,7 @@ span.wavy::before {
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-      grid-template-areas: 'drawMyPetPreview drawMyPetBlurb' 'furiendFinder2Preview furiendFinder2Blurb' 'felineFeelingPreview felineFeelingBlurb' 'furiendFinderBlurb furiendFinderPreview' 'wishyWashyPreview wishyWashyBlurb' 'textileeBlurb textileePreview';
+      grid-template-areas: 'drawMyPetBlurb drawMyPetPreview' 'furiendFinder2Preview furiendFinder2Blurb' 'furiendFinderBlurb furiendFinderPreview' 'felineFeelingPreview felineFeelingBlurb' 'wishyWashyPreview wishyWashyBlurb' 'textileeBlurb textileePreview';
 }
 
 .worksGrid h3 {
@@ -594,17 +594,17 @@ span.wavy::before {
 .a-links:hover, .a-links:focus {
   color: #0055a5;
   background-color: transparent;
-  border-bottom: 2px solid #e2b2d0;
+  border-bottom: 2px solid #ffd6db;
 }
 
 .felineFeelingBlurb {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: felineFeelingBlurb;
 }
 
 .felineFeelingPreview {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: felineFeelingPreview;
 }
@@ -634,7 +634,7 @@ span.wavy::before {
 }
 
 .furiendFinderBlurb {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: furiendFinderBlurb;
 }
@@ -645,7 +645,7 @@ span.wavy::before {
 }
 
 .furiendFinderPreview {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: furiendFinderPreview;
 }
@@ -669,13 +669,13 @@ span.wavy::before {
 
 .drawMyPetBlurb {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: drawMyPetBlurb;
 }
 
 .drawMyPetPreview {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: drawMyPetPreview;
 }
 
@@ -689,7 +689,7 @@ span.wavy::before {
 
 .madeWith:after {
   content: '';
-  background: #e2b2d0;
+  background: #ffd6db;
   position: absolute;
   display: block;
   height: 50%;
@@ -789,7 +789,7 @@ span.wavy::before {
 
 .contact a:hover {
   color: #0055a5;
-  border-bottom: 2px solid #e2b2d0;
+  border-bottom: 2px solid #ffd6db;
 }
 
 .contactGrid {
@@ -854,7 +854,7 @@ fieldset textarea,
 fieldset .submit {
   padding: 10px;
   color: #0055a5;
-  background: #e2b2d0;
+  background: #ffd6db;
   border-radius: 5px;
   border: 2px solid #0055a5;
 }
@@ -964,9 +964,9 @@ textarea {
 }
 
 .submit:hover {
-  color: #e2b2d0;
+  color: #ffd6db;
   background-color: #0055a5;
-  border: 2px solid #e2b2d0;
+  border: 2px solid #ffd6db;
 }
 
 /*SOCIAL MEDIA*/
@@ -990,7 +990,7 @@ textarea {
 }
 
 .socialMedia i:visited {
-  color: #e2b2d0;
+  color: #ffd6db;
 }
 
 .socialMedia i:active {

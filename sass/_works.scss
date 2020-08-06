@@ -15,10 +15,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    'drawMyPetPreview drawMyPetBlurb'
+    'drawMyPetBlurb drawMyPetPreview'
     'furiendFinder2Preview furiendFinder2Blurb'
-    'felineFeelingPreview felineFeelingBlurb'
     'furiendFinderBlurb furiendFinderPreview'
+    'felineFeelingPreview felineFeelingBlurb'
     'wishyWashyPreview wishyWashyBlurb'
     'textileeBlurb textileePreview';
 
@@ -129,7 +129,7 @@
 
 .madeWith:after {
   content: '';
-  background: rgb(226, 178, 208);
+  background: #ffd6db;
   position: absolute;
   display: block;
   height: 50%;
