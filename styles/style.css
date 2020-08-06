@@ -191,6 +191,13 @@ body {
   color: #151515;
 }
 
+main {
+  background: white;
+  border-radius: 25px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 95%;
@@ -208,12 +215,17 @@ h1 {
   padding: 0;
   font-size: 7rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   z-index: 2;
   position: absolute;
-  bottom: 0px;
+  bottom: -3px;
   right: 5px;
   margin: 0;
+}
+
+h1 .comma {
+  position: relative;
+  bottom: 5px;
 }
 
 h2 {
@@ -231,7 +243,7 @@ h2::after {
   position: relative;
   width: 90%;
   height: 5px;
-  background-color: #ffc3bf;
+  background-color: #0c0c0c;
   left: 50px;
   bottom: 5px;
 }
@@ -248,7 +260,7 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
-  background-color: #ffc3bf;
+  background-color: #0c0c0c;
   color: #323b63;
   text-decoration: none;
   padding: 10px;
@@ -288,7 +300,10 @@ a:focus {
   max-height: 90vh;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 .imageContainer img {
@@ -324,7 +339,7 @@ a:focus {
 }
 
 .about a:hover {
-  color: #ffc3bf;
+  color: #0c0c0c;
   background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
@@ -386,7 +401,7 @@ a:focus {
       grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  text-shadow: 2px 2px #ffc3bf;
+  text-shadow: 2px 2px #0c0c0c;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -431,7 +446,7 @@ footer p {
 }
 
 footer span {
-  color: #ffc3bf;
+  color: #0c0c0c;
 }
 
 /*ANIMATE SQUIGGLY ON HOVER*/
@@ -515,7 +530,7 @@ span.wavy::before {
 
 .worksGrid a:hover {
   background-color: #323b63;
-  color: #ffc3bf;
+  color: #0c0c0c;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
@@ -551,7 +566,7 @@ span.wavy::before {
 .furiendFinder2Blurb a:focus {
   color: #0055a5;
   background-color: transparent;
-  border-bottom: 2px solid #ffc3bf;
+  border-bottom: 2px solid #0c0c0c;
 }
 
 .felineFeelingBlurb {
@@ -741,7 +756,7 @@ span.wavy::before {
 
 .contact a:hover {
   color: #0055a5;
-  border-bottom: 2px solid #ffc3bf;
+  border-bottom: 2px solid #0c0c0c;
 }
 
 .contactGrid {
@@ -806,7 +821,7 @@ fieldset textarea,
 fieldset .submit {
   padding: 10px;
   color: #323b63;
-  background: #ffc3bf;
+  background: #0c0c0c;
   border-radius: 5px;
   border: 2px solid #323b63;
 }
@@ -916,9 +931,9 @@ textarea {
 }
 
 .submit:hover {
-  color: #ffc3bf;
+  color: #0c0c0c;
   background-color: #323b63;
-  border: 2px solid #ffc3bf;
+  border: 2px solid #0c0c0c;
 }
 
 /*SOCIAL MEDIA*/
@@ -942,7 +957,7 @@ textarea {
 }
 
 .socialMedia i:visited {
-  color: #ffc3bf;
+  color: #0c0c0c;
 }
 
 .socialMedia i:active {
@@ -978,7 +993,7 @@ textarea {
 .desktopNav li {
   font-size: 2rem;
   margin-right: 10px;
-  border-bottom: 2px solid #ffc3bf;
+  border-bottom: 2px solid #0c0c0c;
 }
 
 .desktopNav a {

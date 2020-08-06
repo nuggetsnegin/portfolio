@@ -2,7 +2,7 @@
 $bg-color: #f7f7f7;
 $accent-color: #0055a5;
 $almost-black: #151515;
-$light-color: rgb(255, 195, 191);
+$light-color: rgb(12, 12, 12);
 $darker-color: #323b63;
 
 $heading-font: "Londrina Outline", cursive;
@@ -17,6 +17,13 @@ html {
 body {
   font-family: $main-font;
   color: $almost-black;
+}
+
+main {
+  background: white;
+  border-radius: 25px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
 }
 
 .wrapper {
@@ -36,12 +43,17 @@ h1 {
   padding: 0;
   font-size: 7rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   z-index: 2;
   position: absolute;
-  bottom: 0px;
+  bottom: -3px;
   right: 5px;
   margin: 0;
+
+  .comma{
+    position: relative;
+    bottom: 5px;
+  }
 }
 
 h2 {
@@ -113,7 +125,10 @@ a {
   position: relative;
   max-height: 90vh;
   object-fit: contain;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -20px;
   img {
     max-width: 1200px;
     width: 100%;
