@@ -181,7 +181,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 /*MAIN*/
 html {
-  background-color: #ecece8;
+  background-color: #f7f7f7;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -204,7 +204,7 @@ p {
 }
 
 h1 {
-  color: #ecece8;
+  color: #f7f7f7;
   padding: 0;
   font-size: 7rem;
   text-transform: uppercase;
@@ -217,9 +217,9 @@ h1 {
 }
 
 h2 {
-  background-color: #0055a5;
-  padding: 20px;
-  color: #ecece8;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  color: #0055a5;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -230,7 +230,7 @@ h2::after {
   display: block;
   position: relative;
   width: 90%;
-  height: 2px;
+  height: 5px;
   background-color: #e2b2d0;
   left: 50px;
   bottom: 5px;
@@ -239,7 +239,7 @@ h2::after {
 h3 {
   background-color: #0055a5;
   padding: 10px 15px;
-  color: #ecece8;
+  color: #f7f7f7;
   border-radius: 5px;
   font-size: 4rem;
   text-transform: lowercase;
@@ -309,7 +309,7 @@ a:focus {
 
 .about p {
   font-size: 2.5rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .about h2 {
@@ -373,27 +373,27 @@ a:focus {
 
 /*TOOLS*/
 .iconDescription {
-  font-size: 1.6rem;
-  opacity: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .toolsIcons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  gap: 50px;
-  text-shadow: 5px 5px #e2b2d0;
+  text-shadow: 2px 2px #e2b2d0;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 
 .tool-container {
-  height: 50px;
+  height: 70px;
+  margin: 30px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,31 +404,23 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tool-container:hover, .tool-container:focus {
   color: #323b63;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
   font-weight: 700;
-  text-shadow: 5px 5px #e2b2d0;
-}
-
-.tool-container:hover .iconDescription, .tool-container:focus .iconDescription {
-  opacity: 1;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  color: #323b63;
 }
 
 /*FOOTIE FOOTER*/
 footer {
   background-color: #323b63;
   padding: 8px;
-  color: #ecece8;
+  color: #f7f7f7;
 }
 
 footer p {
@@ -515,9 +507,9 @@ span.wavy::before {
   gap: 20px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
-      grid-template-areas: 'gameOfPotterPreview gameOfPotterBlurb' 'felineFeelingBlurb felineFeelingPreview' 'wishyWashyPreview wishyWashyBlurb' 'furiendFinderBlurb furiendFinderPreview' 'textileeBlurb textileePreview';
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: 'drawMyPetPreview drawMyPetBlurb' 'furiendFinder2Blurb furiendFinder2Preview' 'felineFeelingPreview felineFeelingBlurb' 'furiendFinderBlurb furiendFinderPreview' 'wishyWashyPreview wishyWashyBlurb' 'textileeBlurb textileePreview';
 }
 
 .worksGrid h3 {
@@ -538,21 +530,26 @@ span.wavy::before {
 .wishyWashyBlurb,
 .wishyWashyPreview,
 .textileePreview,
-.gameOfPotterBlurb,
-.gameOfPotterPreview {
+.drawMyPetBlurb,
+.drawMyPetPreview,
+.furiendFinder2Blurb,
+.furiendFinder2Preview {
   margin-bottom: 15%;
 }
 
 .furiendFinderBlurb a,
-.gameOfPotterBlurb a,
+.drawMyPetBlurb a,
+.furiendFinder2Blurb a,
 .textileeBlurb a {
   padding: 0;
   background-color: transparent;
 }
 
 .furiendFinderBlurb a:hover, .furiendFinderBlurb a:focus,
-.gameOfPotterBlurb a:hover,
-.gameOfPotterBlurb a:focus,
+.drawMyPetBlurb a:hover,
+.drawMyPetBlurb a:focus,
+.furiendFinder2Blurb a:hover,
+.furiendFinder2Blurb a:focus,
 .textileeBlurb a:hover,
 .textileeBlurb a:focus {
   color: #0055a5;
@@ -561,25 +558,35 @@ span.wavy::before {
 }
 
 .felineFeelingBlurb {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: felineFeelingBlurb;
 }
 
 .felineFeelingPreview {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: felineFeelingPreview;
 }
 
+.furiendFinder2Blurb {
+  grid-area: furiendFinderBlurb2;
+}
+
+.furiendFinder2Preview {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: furiendFinder2Preview;
+}
+
 .wishyWashyBlurb {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: wishyWashyBlurb;
 }
 
 .wishyWashyPreview {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: wishyWashyPreview;
 }
@@ -602,27 +609,27 @@ span.wavy::before {
 }
 
 .textileeBlurb {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: textileeBlurb;
 }
 
 .textileePreview {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: textileePreview;
 }
 
-.gameOfPotterBlurb {
+.drawMyPetBlurb {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: gameOfPotterBlurb;
+  grid-area: drawMyPetBlurb;
 }
 
-.gameOfPotterPreview {
+.drawMyPetPreview {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: gameOfPotterPreview;
+  grid-area: drawMyPetPreview;
 }
 
 .madeWith {
@@ -1046,7 +1053,7 @@ textarea {
   height: 2px;
   width: 34px;
   border-radius: 1px;
-  background: #ecece8;
+  background: #f7f7f7;
   vertical-align: middle;
 }
 
@@ -1056,7 +1063,7 @@ textarea {
   content: "";
   height: 2px;
   border-radius: 1px;
-  background: #ecece8;
+  background: #f7f7f7;
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
@@ -1374,7 +1381,7 @@ textarea {
   }
   .imageContainer p {
     font-size: 3rem;
-    background-color: #ecece8;
+    background-color: #f7f7f7;
   }
 }
 

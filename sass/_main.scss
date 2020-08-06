@@ -1,5 +1,5 @@
 /*MAIN*/
-$bg-color: #ecece8;
+$bg-color: #f7f7f7;
 $accent-color: #0055a5;
 $almost-black: #151515;
 $light-color: rgb(226, 178, 208);
@@ -45,9 +45,9 @@ h1 {
 }
 
 h2 {
-  background-color: $accent-color;
-  padding: 20px;
-  color: $bg-color;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  color: $accent-color;;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -57,7 +57,7 @@ h2 {
     display: block;
     position: relative;
     width: 90%;
-    height: 2px;
+    height: 5px;
     background-color: $light-color;
     left: 50px;
     bottom: 5px;
@@ -132,7 +132,7 @@ a {
     "paragraphThree paragraphThree image";
   p {
     font-size: 2.5rem;
-    line-height: 1.4;
+    line-height: 1.6;
   }
 
   h2 {
@@ -176,39 +176,38 @@ a {
 
 /*TOOLS*/
 .iconDescription {
-  font-size: 1.6rem;
-  opacity: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .toolsIcons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:  repeat(3, 1fr);
   font-size: 5rem;
   color: $accent-color;
-  gap: 50px;
-  text-shadow: 5px 5px $light-color;
+  text-shadow: 2px 2px $light-color;
   transition: 0.5s all ease;
 }
 
 .tool-container {
-  height: 50px;
+  height: 70px;
+  margin: 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   &:hover,
   &:focus {
     color: $darker-color;
-    transform: scale(1.2);
     font-weight: 700;
-    text-shadow: 5px 5px $light-color;
-    .iconDescription {
-      opacity: 1;
-      transition: 0.5s all ease;
-      color: $darker-color;
-    }
+    transition: 0.5s all ease;
+    // .iconDescription {
+    //   opacity: 1;
+    //   transition: 0.5s all ease;
+    //   color: $darker-color;
+    // }
   }
 }
 

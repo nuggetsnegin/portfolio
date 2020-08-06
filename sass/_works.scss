@@ -13,12 +13,13 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    'gameOfPotterPreview gameOfPotterBlurb'
-    'felineFeelingBlurb felineFeelingPreview'
-    'wishyWashyPreview wishyWashyBlurb'
+    'drawMyPetPreview drawMyPetBlurb'
+    'furiendFinder2Blurb furiendFinder2Preview'
+    'felineFeelingPreview felineFeelingBlurb'
     'furiendFinderBlurb furiendFinderPreview'
+    'wishyWashyPreview wishyWashyBlurb'
     'textileeBlurb textileePreview';
 
   h3 {
@@ -41,13 +42,16 @@
 .wishyWashyBlurb,
 .wishyWashyPreview,
 .textileePreview,
-.gameOfPotterBlurb,
-.gameOfPotterPreview {
+.drawMyPetBlurb,
+.drawMyPetPreview,
+.furiendFinder2Blurb,
+.furiendFinder2Preview {
   margin-bottom: 15%;
 }
 
 .furiendFinderBlurb,
-.gameOfPotterBlurb,
+.drawMyPetBlurb,
+.furiendFinder2Blurb,
 .textileeBlurb {
   a {
     padding: 0;
@@ -68,6 +72,14 @@
 
 .felineFeelingPreview {
   grid-area: felineFeelingPreview;
+}
+
+.furiendFinder2Blurb {
+  grid-area: furiendFinderBlurb2;
+}
+
+.furiendFinder2Preview {
+  grid-area: furiendFinder2Preview;
 }
 
 .wishyWashyBlurb {
@@ -101,12 +113,12 @@
   grid-area: textileePreview;
 }
 
-.gameOfPotterBlurb {
-  grid-area: gameOfPotterBlurb;
+.drawMyPetBlurb {
+  grid-area: drawMyPetBlurb;
 }
 
-.gameOfPotterPreview {
-  grid-area: gameOfPotterPreview;
+.drawMyPetPreview {
+  grid-area: drawMyPetPreview;
 }
 
 .madeWith {
