@@ -80,6 +80,10 @@
 
 .furiendFinder2Preview {
   grid-area: furiendFinder2Preview;
+  img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 }
 
 .wishyWashyBlurb {

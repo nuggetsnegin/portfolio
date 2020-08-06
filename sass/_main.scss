@@ -2,11 +2,12 @@
 $bg-color: #f7f7f7;
 $accent-color: #0055a5;
 $almost-black: #242424;
-$light-color: rgb(89, 89, 126);
-$darker-color: #323b63;
+$light-color: rgb(226, 178, 208);
+$darker-color: #0055a5;
 
 $heading-font: "Londrina Outline", cursive;
 $main-font: "Inconsolata", monospace;
+$accent-font: "Bree Serif", serif;
 
 html {
   background-color: $bg-color;
@@ -59,7 +60,8 @@ h1 {
 h2 {
   margin-bottom: 3rem;
   margin-top: 10rem;
-  color: $accent-color;;
+  color: $accent-color;
+  font-family: $accent-font;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -77,10 +79,8 @@ h2 {
 }
 
 h3 {
-  background-color: $accent-color;
+  color: $accent-color;
   padding: 10px 15px;
-  color: $bg-color;
-  border-radius: 5px;
   font-size: 4rem;
   text-transform: lowercase;
 }
@@ -94,7 +94,7 @@ a {
   padding: 10px;
   font-weight: 700;
   &:focus {
-    border: 2px dashed $accent-color;
+    border-bottom: 2px dashed $accent-color;
   }
 }
 

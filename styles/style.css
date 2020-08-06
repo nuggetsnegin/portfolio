@@ -232,6 +232,7 @@ h2 {
   margin-bottom: 3rem;
   margin-top: 10rem;
   color: #0055a5;
+  font-family: "Bree Serif", serif;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -249,10 +250,8 @@ h2::after {
 }
 
 h3 {
-  background-color: #0055a5;
+  color: #0055a5;
   padding: 10px 15px;
-  color: #f7f7f7;
-  border-radius: 5px;
   font-size: 4rem;
   text-transform: lowercase;
 }
@@ -260,15 +259,15 @@ h3 {
 a {
   text-decoration: none;
   cursor: pointer;
-  background-color: #59597e;
-  color: #323b63;
+  background-color: #e2b2d0;
+  color: #0055a5;
   text-decoration: none;
   padding: 10px;
   font-weight: 700;
 }
 
 a:focus {
-  border: 2px dashed #0055a5;
+  border-bottom: 2px dashed #0055a5;
 }
 
 .accent {
@@ -340,7 +339,7 @@ a:focus {
 }
 
 .about a:hover {
-  color: #59597e;
+  color: #e2b2d0;
   background: none;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
@@ -402,7 +401,7 @@ a:focus {
       grid-template-rows: repeat(3, 1fr);
   font-size: 5rem;
   color: #0055a5;
-  text-shadow: 2px 2px #59597e;
+  text-shadow: 2px 2px #e2b2d0;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
@@ -426,7 +425,7 @@ a:focus {
 }
 
 .tool-container:hover, .tool-container:focus {
-  color: #323b63;
+  color: #0055a5;
   font-weight: 700;
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
@@ -434,7 +433,7 @@ a:focus {
 
 /*FOOTIE FOOTER*/
 footer {
-  background-color: #323b63;
+  background-color: #0055a5;
   padding: 8px;
   color: #f7f7f7;
 }
@@ -447,7 +446,7 @@ footer p {
 }
 
 footer span {
-  color: #59597e;
+  color: #e2b2d0;
 }
 
 /*ANIMATE SQUIGGLY ON HOVER*/
@@ -481,17 +480,17 @@ footer span {
 .link span {
   position: relative;
   display: inline-block;
-  color: #323b63;
+  color: #0055a5;
 }
 
 .link span::before {
   z-index: 3;
   position: absolute;
   content: attr(data-content);
-  color: #323b63;
+  color: #0055a5;
   text-decoration: underline;
-  -webkit-text-decoration-color: #323b63;
-          text-decoration-color: #323b63;
+  -webkit-text-decoration-color: #0055a5;
+          text-decoration-color: #0055a5;
   -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
           clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
   -webkit-transition: -webkit-clip-path 275ms ease;
@@ -530,8 +529,8 @@ span.wavy::before {
 }
 
 .worksGrid a:hover {
-  background-color: #323b63;
-  color: #59597e;
+  background-color: #0055a5;
+  color: #e2b2d0;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
@@ -567,7 +566,7 @@ span.wavy::before {
 .furiendFinder2Blurb a:focus {
   color: #0055a5;
   background-color: transparent;
-  border-bottom: 2px solid #59597e;
+  border-bottom: 2px solid #e2b2d0;
 }
 
 .felineFeelingBlurb {
@@ -592,6 +591,11 @@ span.wavy::before {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: furiendFinder2Preview;
+}
+
+.furiendFinder2Preview img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .wishyWashyBlurb {
@@ -757,7 +761,7 @@ span.wavy::before {
 
 .contact a:hover {
   color: #0055a5;
-  border-bottom: 2px solid #59597e;
+  border-bottom: 2px solid #e2b2d0;
 }
 
 .contactGrid {
@@ -821,16 +825,16 @@ fieldset input,
 fieldset textarea,
 fieldset .submit {
   padding: 10px;
-  color: #323b63;
-  background: #59597e;
+  color: #0055a5;
+  background: #e2b2d0;
   border-radius: 5px;
-  border: 2px solid #323b63;
+  border: 2px solid #0055a5;
 }
 
 fieldset input::-webkit-input-placeholder,
 fieldset textarea::-webkit-input-placeholder,
 fieldset .submit::-webkit-input-placeholder {
-  color: #323b63;
+  color: #0055a5;
   opacity: 0.8;
   font-size: 2rem;
 }
@@ -838,7 +842,7 @@ fieldset .submit::-webkit-input-placeholder {
 fieldset input:-ms-input-placeholder,
 fieldset textarea:-ms-input-placeholder,
 fieldset .submit:-ms-input-placeholder {
-  color: #323b63;
+  color: #0055a5;
   opacity: 0.8;
   font-size: 2rem;
 }
@@ -846,7 +850,7 @@ fieldset .submit:-ms-input-placeholder {
 fieldset input::-ms-input-placeholder,
 fieldset textarea::-ms-input-placeholder,
 fieldset .submit::-ms-input-placeholder {
-  color: #323b63;
+  color: #0055a5;
   opacity: 0.8;
   font-size: 2rem;
 }
@@ -854,7 +858,7 @@ fieldset .submit::-ms-input-placeholder {
 fieldset input::placeholder,
 fieldset textarea::placeholder,
 fieldset .submit::placeholder {
-  color: #323b63;
+  color: #0055a5;
   opacity: 0.8;
   font-size: 2rem;
 }
@@ -862,7 +866,7 @@ fieldset .submit::placeholder {
 fieldset input:focus,
 fieldset textarea:focus,
 fieldset .submit:focus {
-  border: 2px dashed #323b63;
+  border: 2px dashed #0055a5;
 }
 
 fieldset input:focus::-webkit-input-placeholder,
@@ -924,17 +928,17 @@ textarea {
   border: none;
   padding: 10px;
   text-transform: uppercase;
-  color: #323b63;
+  color: #0055a5;
 }
 
 .submit:focus {
-  border: 2px dashed #323b63;
+  border: 2px dashed #0055a5;
 }
 
 .submit:hover {
-  color: #59597e;
-  background-color: #323b63;
-  border: 2px solid #59597e;
+  color: #e2b2d0;
+  background-color: #0055a5;
+  border: 2px solid #e2b2d0;
 }
 
 /*SOCIAL MEDIA*/
@@ -958,7 +962,7 @@ textarea {
 }
 
 .socialMedia i:visited {
-  color: #59597e;
+  color: #e2b2d0;
 }
 
 .socialMedia i:active {
@@ -966,7 +970,7 @@ textarea {
 }
 
 .socialMedia i:hover, .socialMedia i:focus {
-  color: #323b63;
+  color: #0055a5;
   border-bottom: none;
   text-decoration: none;
   -webkit-transform: scale(1.2);
@@ -1056,7 +1060,7 @@ textarea {
   border: none;
   border-radius: 50%;
   padding: 0;
-  background: #323b63;
+  background: #0055a5;
   line-height: 0.6;
   text-align: center;
   /*button dividers*/
@@ -1103,7 +1107,7 @@ textarea {
 
 .navTarget:focus {
   background-color: #0055a5;
-  border: 2px solid #323b63;
+  border: 2px solid #0055a5;
 }
 
 /*nav bg*/
