@@ -105,8 +105,9 @@
   h2 {
     font-size: 5rem;
   }
-  h3 {
-    font-size: 2.5rem;
+
+  .blurb h3 {
+    font-size: 5.5rem;
   }
 
   form {
@@ -142,7 +143,7 @@
   h2 {
     font-size: 4rem;
     &::after {
-      height: 1px;
+      height: 3px;
     }
   }
 

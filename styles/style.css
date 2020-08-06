@@ -1239,8 +1239,8 @@ textarea {
   h2 {
     font-size: 5rem;
   }
-  h3 {
-    font-size: 2.5rem;
+  .blurb h3 {
+    font-size: 5.5rem;
   }
   form {
     display: block;
@@ -1272,7 +1272,7 @@ textarea {
     font-size: 4rem;
   }
   h2::after {
-    height: 1px;
+    height: 3px;
   }
   .about {
     -ms-grid-columns: 1fr;
