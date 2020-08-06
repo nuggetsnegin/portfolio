@@ -44,7 +44,7 @@
     img{
       width: 50%;
       height: 50%;
-      margin-left: 15%;
+      margin-left: 22%;
     }
    
     p {
@@ -52,6 +52,19 @@
     }
     span {
       line-height: 2;
+    }
+  }
+
+  .blurb{
+    margin-bottom: 5%;
+
+    p:first-of-type{
+      margin-top: 0px;
+    }
+
+    h3{
+      font-size: 7.5rem;
+      letter-spacing: -5px;
     }
   }
 }
