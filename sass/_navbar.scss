@@ -12,7 +12,7 @@
   li {
     font-size: 2rem;
     margin-right: 10px;
-    border-bottom: 2px solid $light-color;
+    // border-bottom: 2px solid $light-color;
   }
 
   a {
@@ -22,6 +22,7 @@
     &:hover,
     &:focus {
       font-weight: 700;
+      border: none;
     }
   }
 }
