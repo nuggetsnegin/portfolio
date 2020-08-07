@@ -120,6 +120,7 @@ a {
     font-family: $main-font;
     color: $accent-color;
     font-size: 4rem;
+    background: white;
   }
 }
 
@@ -154,6 +155,10 @@ a {
 
   h2 {
     grid-area: title;
+  }
+
+  .portfolio-header{
+    margin-bottom: 550px;
   }
 
   a {

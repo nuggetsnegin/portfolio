@@ -129,6 +129,15 @@
   li {
     display: inline;
   }
+
+  .gh-link{
+    margin: 0 auto;
+  }
+
+  .worksGrid img{
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -144,7 +153,7 @@
 
   .about .aboutImage {
     &:hover .suprise-img {
-      display: none !important;
+      display: none;
     }
   }
 
@@ -182,8 +191,6 @@
   .about .aboutImage img {
     width: 200px;
     height: 200px;
-    // -webkit-box-shadow: 5px 5px #ffa9e0;
-    // box-shadow: 5px 5px #ffa9e0;
     margin-bottom: 5px;
   }
 
@@ -214,12 +221,51 @@
 }
 
 @media (max-width: 476px) {
+
+  .aboutParagraphTwo{
+    margin-top: 20px;
+  }
+
+  .about h2{
+    font-size: 5rem;
+  }
+
+  .about h2:first-of-type{
+    margin-top: 55px;
+  }
+
+  .blurb h3{
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+
+  .blurb p:first-of-type{
+    display: none;
+  }
+
+  .blurb p:nth-of-type(2){
+    margin-top: 0;
+  }
+
+  .blurb p:last-of-type{
+    margin-bottom: 50px;
+  }
+
+  .madeWith{
+    display: none;
+  }
+
   .imageContainer {
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     p {
       font-size: 2.5rem;
+    }
+    .accentText p{
+      font-size: 3rem;
+      left: -30px;
+      position: relative;
     }
   }
 
@@ -238,14 +284,7 @@
     font-size: 2.7rem;
   }
 
-  h2 {
-    font-size: 2.7rem;
-  }
-
   .imageContainer {
-    h1 {
-      font-size: 3rem;
-    }
     p {
       font-size: 1.6rem;
       padding: 0;
@@ -272,6 +311,24 @@
   }
 }
 
+@media (max-width: 400px){
+  .imageContainer h1{
+    font-size: 3rem;
+  }
+
+  .accentText{
+    display: none;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+
+  .about h2:first-of-type{
+    margin-top: 10px;
+  }
+}
+
 /*for small height screen resolution - fix accent*/
 @media (max-height: 600px) {
   .imageContainer {
@@ -280,7 +337,6 @@
     }
     p {
       font-size: 3rem;
-      background-color: $bg-color;
     }
   }
 }
