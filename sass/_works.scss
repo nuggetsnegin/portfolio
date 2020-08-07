@@ -35,6 +35,15 @@
   .gh-link{
     font-size: 2rem;
     margin-right: 15px;
+    border: 2px solid $accent-color;
+    border-radius: 5px;
+    
+    &:hover, &:focus{
+      transition: ease-in 0.2s;
+      border: 2px solid $light-color;
+      background: $accent-color;
+      color: $light-color;
+    }
   }
 }
 

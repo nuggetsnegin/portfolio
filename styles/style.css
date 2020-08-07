@@ -567,6 +567,18 @@ span.wavy::before {
 .blurb .gh-link {
   font-size: 2rem;
   margin-right: 15px;
+  border: 2px solid #0055a5;
+  border-radius: 5px;
+}
+
+.preview .gh-link:hover, .preview .gh-link:focus,
+.blurb .gh-link:hover,
+.blurb .gh-link:focus {
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  border: 2px solid #ffd6db;
+  background: #0055a5;
+  color: #ffd6db;
 }
 
 .a-links {
