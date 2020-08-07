@@ -412,6 +412,10 @@ a:focus {
   display: inline-block;
 }
 
+.socialMedia a {
+  text-decoration: none;
+}
+
 /*TOOLS*/
 .iconDescription {
   font-size: 1.5rem;
@@ -1183,6 +1187,9 @@ textarea {
     font-size: 1.8rem;
     padding: 20px 10px;
   }
+  h3 {
+    font-size: 5rem;
+  }
   .contactGrid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1201,6 +1208,9 @@ textarea {
   }
   .worksGrid span {
     line-height: 2;
+  }
+  h2 {
+    font-size: 7rem;
   }
   .blurb {
     margin-bottom: 5%;

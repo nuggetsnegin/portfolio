@@ -31,6 +31,10 @@
     padding: 20px 10px;
   }
 
+  h3{
+    font-size: 5rem;
+  }
+
   .contactGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -53,6 +57,10 @@
     span {
       line-height: 2;
     }
+  }
+
+  h2{
+    font-size: 7rem;
   }
 
   .blurb{
