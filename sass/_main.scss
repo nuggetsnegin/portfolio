@@ -1,12 +1,13 @@
 /*MAIN*/
-$bg-color: #ecece8;
+$bg-color: #f7f7f7;
 $accent-color: #0055a5;
-$almost-black: #151515;
-$light-color: rgb(226, 178, 208);
-$darker-color: #323b63;
+$almost-black: #242424;
+$light-color: #ffd6db;
+$darker-color: #0055a5;
 
 $heading-font: "Londrina Outline", cursive;
 $main-font: "Inconsolata", monospace;
+$accent-font: "Bree Serif", serif;
 
 html {
   background-color: $bg-color;
@@ -17,6 +18,13 @@ html {
 body {
   font-family: $main-font;
   color: $almost-black;
+}
+
+main {
+  background: white;
+  border-radius: 25px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
 }
 
 .wrapper {
@@ -36,18 +44,24 @@ h1 {
   padding: 0;
   font-size: 7rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   z-index: 2;
   position: absolute;
-  bottom: 0px;
+  bottom: -3px;
   right: 5px;
   margin: 0;
+
+  .comma{
+    position: relative;
+    bottom: 5px;
+  }
 }
 
 h2 {
-  background-color: $accent-color;
-  padding: 20px;
-  color: $bg-color;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  color: $accent-color;
+  font-family: $accent-font;
   font-size: 7rem;
   text-transform: lowercase;
   letter-spacing: 5px;
@@ -57,20 +71,19 @@ h2 {
     display: block;
     position: relative;
     width: 90%;
-    height: 2px;
-    background-color: $light-color;
+    height: 5px;
+    background-color: $accent-color;
     left: 50px;
     bottom: 5px;
   }
 }
 
 h3 {
-  background-color: $accent-color;
+  color: $accent-color;
   padding: 10px 15px;
-  color: $bg-color;
-  border-radius: 5px;
-  font-size: 4rem;
+  font-size: 6rem;
   text-transform: lowercase;
+  padding-left: 0px;
 }
 
 a {
@@ -82,7 +95,7 @@ a {
   padding: 10px;
   font-weight: 700;
   &:focus {
-    border: 2px dashed $accent-color;
+    border-bottom: 2px dashed $accent-color;
   }
 }
 
@@ -100,8 +113,9 @@ a {
   p {
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin: 0;
+    margin-right: -8px;
     text-shadow: none;
     font-family: $main-font;
     color: $accent-color;
@@ -113,7 +127,10 @@ a {
   position: relative;
   max-height: 90vh;
   object-fit: contain;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -20px;
   img {
     max-width: 1200px;
     width: 100%;
@@ -132,7 +149,7 @@ a {
     "paragraphThree paragraphThree image";
   p {
     font-size: 2.5rem;
-    line-height: 1.4;
+    line-height: 1.6;
   }
 
   h2 {
@@ -154,6 +171,13 @@ a {
 
   .aboutParagraphTwo {
     grid-area: paragraphTwo;
+    a{
+      padding: 0px;
+    }
+    a:focus{
+      border: none;
+      color: $light-color;
+    }
   }
 
   .aboutParagraphThree {
@@ -171,44 +195,62 @@ a {
       border-radius: 45%;
       box-shadow: 5px 5px $accent-color;
     }
+    .regular-img{
+      position: relative;
+      display: inline-block;
+    }
+    .suprise-img{
+      display: none;
+      position: absolute;
+      left: 0;
+      z-index: 99;
+    }
+    &:hover .suprise-img {
+      display: inline-block;
+    }
+  }
+}
+
+.socialMedia{
+  a{
+    text-decoration: none;
   }
 }
 
 /*TOOLS*/
 .iconDescription {
-  font-size: 1.6rem;
-  opacity: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .toolsIcons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:  repeat(3, 1fr);
   font-size: 5rem;
   color: $accent-color;
-  gap: 50px;
-  text-shadow: 5px 5px $light-color;
+  text-shadow: 2px 2px $light-color;
   transition: 0.5s all ease;
 }
 
 .tool-container {
-  height: 50px;
+  height: 70px;
+  margin: 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   &:hover,
   &:focus {
     color: $darker-color;
-    transform: scale(1.2);
     font-weight: 700;
-    text-shadow: 5px 5px $light-color;
-    .iconDescription {
-      opacity: 1;
-      transition: 0.5s all ease;
-      color: $darker-color;
-    }
+    transition: 0.5s all ease;
+    // .iconDescription {
+    //   opacity: 1;
+    //   transition: 0.5s all ease;
+    //   color: $darker-color;
+    // }
   }
 }
 

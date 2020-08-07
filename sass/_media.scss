@@ -15,23 +15,12 @@
     font-size: 2rem;
   }
 
-  .works {
-    img {
-      width: 90%;
-      height: 90%;
-    }
-
-    span {
-      line-height: 1.8;
-    }
-  }
-
   .contact h2{
     margin-bottom: 10px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1120px) {
   .about .aboutImage img {
     width: 300px;
     height: 300px;
@@ -42,6 +31,10 @@
     padding: 20px 10px;
   }
 
+  h3{
+    font-size: 5rem;
+  }
+
   .contactGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -50,46 +43,36 @@
   }
 
   .worksGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "gameOfPotterBlurb"
-      "gameOfPotterPreview"
-      "felineFeelingBlurb"
-      "felineFeelingPreview"
-      "wishyWashyBlurb"
-      "wishyWashyPreview"
-      "furiendFinderBlurb"
-      "furiendFinderPreview"
-      "textileeBlurb"
-      "textileePreview";
+    display: block;
 
+    img{
+      width: 50%;
+      height: 50%;
+      margin-left: 22%;
+    }
+   
     p {
       font-size: 2rem;
     }
-
-    .felineFeelingBlurb,
-    .wishyWashyBlurb,
-    .furiendFinderBlurb,
-    .textileeBlurb,
-    .gameOfPotterBlurb {
-      margin-bottom: 5px;
-    }
-
-    .felineFeelingPreview,
-    .wishyWashyPreview,
-    .furiendFinderPreview,
-    .textileePreview,
-    .gameOfPotterPreview {
-      img {
-        width: 100%;
-        height: 100%;
-      }
-      margin-bottom: 20%;
-    }
-
     span {
       line-height: 2;
+    }
+  }
+
+  h2{
+    font-size: 7rem;
+  }
+
+  .blurb{
+    margin-bottom: 5%;
+
+    p:first-of-type{
+      margin-top: 0px;
+    }
+
+    h3{
+      font-size: 7.5rem;
+      letter-spacing: -5px;
     }
   }
 }
@@ -106,14 +89,6 @@
   .contact h2 {
     margin-top: 0;
   }
-
-  .gameOfPotterPreview {
-    margin-bottom: 5px;
-  }
-
-  // .worksGrid {
-  //   gap: 10px;
-  // }
 }
 
 @media (max-width: 700px) {
@@ -138,8 +113,9 @@
   h2 {
     font-size: 5rem;
   }
-  h3 {
-    font-size: 2.5rem;
+
+  .blurb h3 {
+    font-size: 5.5rem;
   }
 
   form {
@@ -166,10 +142,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .about .aboutImage {
+    &:hover .suprise-img {
+      display: none !important;
+    }
+  }
+
   h2 {
     font-size: 4rem;
     &::after {
-      height: 1px;
+      height: 3px;
     }
   }
 
@@ -191,7 +173,6 @@
       padding-bottom: 20px;
     }
   }
-
   .aboutImage {
     padding-bottom: 10px;
     display: flex;
@@ -201,8 +182,8 @@
   .about .aboutImage img {
     width: 200px;
     height: 200px;
-    -webkit-box-shadow: 5px 5px #ffa9e0;
-    box-shadow: 5px 5px #ffa9e0;
+    // -webkit-box-shadow: 5px 5px #ffa9e0;
+    // box-shadow: 5px 5px #ffa9e0;
     margin-bottom: 5px;
   }
 

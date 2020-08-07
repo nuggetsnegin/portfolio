@@ -1,11 +1,11 @@
 .works {
   img {
-    height: 300px;
-    width: 590px;
-    border-radius: 20px;
-    -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
-    -moz-box-shadow: 11px 11px 0px -3px #0055a5;
-    box-shadow: 11px 11px 0px -3px #0055a5;
+    height: 90%;
+    width: 90%;
+    // border-radius: 20px;
+    // -webkit-box-shadow: 11px 11px 0px -3px #0055a5;
+    // -moz-box-shadow: 11px 11px 0px -3px #0055a5;
+    // box-shadow: 11px 11px 0px -3px #0055a5;
   }
 }
 
@@ -13,52 +13,39 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    'gameOfPotterPreview gameOfPotterBlurb'
-    'felineFeelingBlurb felineFeelingPreview'
-    'wishyWashyPreview wishyWashyBlurb'
+    'drawMyPetBlurb drawMyPetPreview'
+    'furiendFinder2Preview furiendFinder2Blurb'
     'furiendFinderBlurb furiendFinderPreview'
-    'textileeBlurb textileePreview';
+    'felineFeelingPreview felineFeelingBlurb'
+    'textileeBlurb textileePreview'
+    'wishyWashyPreview wishyWashyBlurb';
 
   h3 {
     margin: 0;
   }
 
-  a {
-    &:hover {
-      background-color: $darker-color;
-      color: $light-color;
-      transition: ease-in 0.2s;
-    }
+}
+
+.preview,
+.blurb {
+  margin-bottom: 15%;
+
+  .gh-link{
+    font-size: 2rem;
+    margin-right: 15px;
   }
 }
 
-.felineFeelingBlurb,
-.felineFeelingPreview,
-.furiendFinderBlurb,
-.furiendFinderPreview,
-.wishyWashyBlurb,
-.wishyWashyPreview,
-.textileePreview,
-.gameOfPotterBlurb,
-.gameOfPotterPreview {
-  margin-bottom: 15%;
-}
-
-.furiendFinderBlurb,
-.gameOfPotterBlurb,
-.textileeBlurb {
-  a {
+.a-links {
     padding: 0;
     background-color: transparent;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      background-color: transparent;
-      border-bottom: 2px solid $light-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: transparent;
+    border-bottom: 2px solid $light-color;
   }
 }
 
@@ -68,6 +55,14 @@
 
 .felineFeelingPreview {
   grid-area: felineFeelingPreview;
+}
+
+.furiendFinder2Blurb {
+  grid-area: furiendFinder2Blurb;
+}
+
+.furiendFinder2Preview {
+  grid-area: furiendFinder2Preview;
 }
 
 .wishyWashyBlurb {
@@ -101,12 +96,12 @@
   grid-area: textileePreview;
 }
 
-.gameOfPotterBlurb {
-  grid-area: gameOfPotterBlurb;
+.drawMyPetBlurb {
+  grid-area: drawMyPetBlurb;
 }
 
-.gameOfPotterPreview {
-  grid-area: gameOfPotterPreview;
+.drawMyPetPreview {
+  grid-area: drawMyPetPreview;
 }
 
 .madeWith {
@@ -119,7 +114,7 @@
 
 .madeWith:after {
   content: '';
-  background: rgb(226, 178, 208);
+  background: #ffd6db;
   position: absolute;
   display: block;
   height: 50%;
