@@ -249,6 +249,14 @@ h2::after {
   bottom: 5px;
 }
 
+.right{
+  margin-left: 50px;
+}
+
+.portfolio-header::after{
+  width: 95%;
+}
+
 h3 {
   color: #0055a5;
   padding: 10px 15px;
@@ -548,7 +556,6 @@ span.wavy::before {
 .works img {
   height: 90%;
   width: 90%;
-  margin-left: 50px;
 }
 
 .worksGrid {
