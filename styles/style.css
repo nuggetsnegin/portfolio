@@ -31,6 +31,10 @@ a:active, a:hover {
 
 h1 {
   font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 abbr[title] {
@@ -466,7 +470,8 @@ a:focus {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          
+  content: center;
 }
 
 .tool-container:hover, .tool-container:focus {
